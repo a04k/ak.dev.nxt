@@ -24,7 +24,7 @@ export default function Home() {
       <div id="hero" className="mb-16">
         <h1 className="text-6xl mb-6 font-amarga dark:text-emerald-600 text-emerald-800">Ahmed Khaled.</h1>
 
-        <div className="font-spmI text-base">
+        <div className="font-spmI text-sm lg:text-base">
           <h2>
             CS Student, web dev, meme connoisseur
             <br/>You&apos;re currently looking at my website built with{" "}
@@ -32,7 +32,7 @@ export default function Home() {
           </h2>
           <h2>
             a little bit about me:
-            <ul className="ml-10 list-disc">
+            <ul className="lg:ml-10 ml-5 list-disc">
               <li>in my sophomore year of pursuing a B.S in computer science @ ain shams university </li>
               <li>learning & writing code in a few languages mainly Javascript/TypeScript, C++, Python </li>
               <li>sometimes do a bit of design work mainly graphic design but also UI</li>
@@ -40,26 +40,26 @@ export default function Home() {
               <li>Competed in NASA Space Apps Cairo Hackathon 2023</li>
             </ul>
           </h2>
-          <ul className="font-sm mt-8 flex flex-col space-x-0 space-y-2 text-neutral-600 md:flex-row md:space-x-4 md:space-y-0 dark:text-neutral-300">
+          <ul className="font-sm mt-8 flex flex-row text-neutral-600 dark:text-neutral-300 ">
             <li>
               <a
-                className="flex items-center transition-all hover:text-neutral-800 dark:hover:text-neutral-100"
+                className="lg:flex transition-all items-center hover:text-neutral-800 dark:hover:text-neutral-100"
                 rel="noopener noreferrer"
                 target="_blank"
                 href="https://www.linkedin.com/in/ahmedkhaled14/"
               >
                 <ArrowIcon />
-                <p className="ml-2 h-7">LinkedIn</p>
+                <p className="ml-2 lg:h-7">LinkedIn</p>
               </a>
-            </li>
+            </li> &nbsp; &nbsp;
             <li>
               <a
-                className="flex items-center transition-all hover:text-neutral-800 dark:hover:text-neutral-100"
+                className="lg:flex items-center transition-all hover:text-neutral-800 dark:hover:text-neutral-100"
                 rel="noopener noreferrer"
                 href="mailto:63ahmedkhaled@gmail.com"
               >
                 <ArrowIcon />
-                <p className="ml-2 h-7">email me</p>
+                <p className="ml-2 lg:h-7">email me</p>
               </a>
             </li>
           </ul>
@@ -69,7 +69,7 @@ export default function Home() {
       {/* Projects */}
       <div id="Projects" className="mb-0">
         <h1 className="text-6xl mb-6 dark:text-amber-500 text-amber-600 font-amarga">projects</h1>
-        <div className="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3 font-spmR">
+        <div className="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3  font-spmR">
           <DefCard
             href="https://github.com/TheGrandMasons/Naveris"
             link="_blank"
