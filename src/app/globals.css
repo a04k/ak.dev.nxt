@@ -2,32 +2,116 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+@font-face {
+  font-family: amarga;
+  src: url(../../public/Fonts/amarga.otf);
+}
+@font-face {
+  font-family: lostar;
+  src: url(../../public/Fonts/lostar.otf);
+}
+@font-face {
+  font-family: refrankt;
+  src: url(../../public/Fonts/refrankt.otf);
+}
+@font-face {
+  font-family: spacemonoBI;
+  src: url(../../public/Fonts/spacemonoBI.ttf);
+}
+@font-face {
+  font-family: spacemonoB;
+  src: url(../../public/Fonts/spacemonoB.ttf);
+}
+@font-face {
+  font-family: spacemonoR;
+  src: url(../../public/Fonts/spacemonoR.ttf);
+}
+@font-face {
+  font-family: spacemonoI;
+  src: url(../../public/Fonts/spacemonoI.ttf);
 }
 
+
 @media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
+  body {
+    /*
+      FOR THE GRADIENT!
+    :root{
+    --foreground-rgb: 0, 0, 255;
     --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0; 
+    }
+    */
+    background-color: rgb(16, 13, 14);
+    --foreground-rgb: 255, 255, 255;
+
+
+  }
+}
+@media (prefers-color-scheme: light) {
+  body {
+    /*
+      FOR THE GRADIENT!
+    :root{
+    --foreground-rgb: 0, 0, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0; 
+    }
+    */
+    background-color: rgb(219, 192, 151);
+    background-image: url('../../public/Images/noise.png');
+    background-repeat: repeat;
+    --foreground-rgb: 0, 0, 0;
+  }
+  hr{
+    border-color: black;
   }
 }
 
 body {
   color: rgb(var(--foreground-rgb));
+  /*
   background: linear-gradient(
       to bottom,
       transparent,
       rgb(var(--background-end-rgb))
     )
-    rgb(var(--background-start-rgb));
+    rgb(var(--background-start-rgb)); */
 }
+
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+}
+
+@layer components {
+  .resumeSection {
+      @apply font-spmR mb-5;
+  }
+
+  .resumeSectionTitle {
+      @apply text-2xl font-bold mb-4 dark:text-amber-400 text-amber-600;
+  }
+
+  .resumeItem {
+      @apply py-4 pr-8;
+  }
+
+  .resumeContentTitle {
+      @apply text-2xl font-bold mb-4;
+  }
+
+  .resumeContent {
+      @apply text-base mb-2  ;
+  }
+
+  .resumePoint {
+      @apply text-lg ml-auto ;
+  }
+  .navlink{
+    @apply dark:hover:bg-dPurp-500 p-2 rounded-2xl dark:hover:text-beige-300  hover:bg-beige-300;
+    ;
   }
 }
