@@ -15,7 +15,7 @@ import Footer from "./Components/Footer";
 
 export const metadata: Metadata = {
   title: "Ahmed Khaled",
-  description: "built by Ahmed",
+  description: "🚀📦",
 };
 
 export default function RootLayout({
