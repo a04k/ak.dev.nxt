@@ -2,9 +2,9 @@ import CityTime from './cityTime';
 
 export default function Footer () {
   return (
-  <div className='mt-24 mb-10 font-spmR'>
+  <div className='mt-24 font-spmR bottom-0'>
     <div className='text-center'><CityTime/></div>
-    <p className='text-center text-emerald-600'>ahmed.dev</p>
+    <p className='text-center dark:text-emerald-600 text-emerald-900'>ahmed.dev</p>
   </div>
   );
 };

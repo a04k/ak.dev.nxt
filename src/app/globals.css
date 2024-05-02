@@ -58,8 +58,9 @@
     --background-end-rgb: 0, 0, 0; 
     }
     */
-    background-color: rgb(219, 192, 151);
+    background-color: rgb(230, 206, 171);
     background-image: url('../../public/Images/noise.png');
+    background-blend-mode: color-dodge;
     background-repeat: repeat;
     --foreground-rgb: 0, 0, 0;
   }
@@ -88,30 +89,30 @@ body {
 
 @layer components {
   .resumeSection {
-      @apply font-spmR lg:mb-5 ;
+    @apply font-spmR lg:mb-5 ;
   }
 
   .resumeSectionTitle {
-      @apply lg:text-2xl text-xl font-bold mb-4 dark:text-amber-400 text-amber-600;
+    @apply lg:text-2xl text-xl font-bold mb-4 dark:text-amber-400 text-amber-600;
   }
 
   .resumeItem {
-      @apply py-4 pr-8;
+    @apply py-4 pr-8;
   }
 
   .resumeContentTitle {
-      @apply lg:text-2xl text-xl font-bold mb-4;
+    @apply lg:text-2xl text-xl font-bold mb-4;
   }
 
   .resumeContent {
-      @apply text-base mb-4  ;
+    @apply text-base mb-4  ;
   }
 
   .resumePoint {
-      @apply text-lg ml-auto ;
+    @apply text-lg ml-auto ;
   }
   .navlink{
-    @apply dark:hover:bg-dPurp-500 p-2 rounded-2xl dark:hover:text-beige-300  hover:bg-beige-300 transition-all;
+    @apply dark:hover:bg-dPurp-500 p-2 px-3 rounded-lg dark:hover:text-beige-300 hover:bg-beige-400 transition-all;
     ;
   }
 }

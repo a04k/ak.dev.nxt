@@ -22,12 +22,12 @@ export default function Home() {
       <main className="ml-4">
       {/* Hero*/}
       <div id="hero" className="mb-16">
-        <h1 className="text-6xl mb-6 font-amarga dark:text-emerald-600 text-emerald-800">Ahmed Khaled.</h1>
+        <h1 className="text-6xl mb-6 font-amarga dark:text-emerald-600 text-emerald-800">Ahmed Khaled</h1>
 
         <div className="font-spmI text-sm lg:text-base">
           <h2>
-            CS Student, web dev, meme connoisseur
-            <br/>You&apos;re currently looking at my website built with{" "}
+            computer science student, web dev, chronically online.
+            <br/>you&apos;re currently looking at my website built with{" "}
             <u>Next.js</u> and <u>Tailwind</u>{" "}
           </h2>
           <h2>
@@ -37,7 +37,7 @@ export default function Home() {
               <li>learning & writing code in a few languages mainly Javascript/TypeScript, C++, Python </li>
               <li>sometimes do a bit of design work mainly graphic design but also UI</li>
               <li>currently a backend development team member at Open Source Community FCIS </li>
-              <li>Competed in NASA Space Apps Cairo Hackathon 2023</li>
+              <li>competed in NASA Space Apps Cairo Hackathon 2023</li>
             </ul>
           </h2>
           <ul className="font-sm mt-8 flex flex-row text-neutral-600 dark:text-neutral-300 ">
@@ -69,7 +69,7 @@ export default function Home() {
       {/* Projects */}
       <div id="Projects" className="mb-0">
         <h1 className="text-6xl mb-6 dark:text-amber-500 text-amber-600 font-amarga">projects</h1>
-        <div className="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3  font-spmR">
+        <div className="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3 font-spmR">
           <DefCard
             href="https://github.com/TheGrandMasons/Naveris"
             link="_blank"
