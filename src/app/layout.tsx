@@ -26,8 +26,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="mt-12 lg:mt-0 lg:m-0 ml-6 mr-6">
-        <Navbar className="ml-0 md:ml-6 lg:ml-20 lg:float-left dark:text-cyan-600 dark:opacity-85 text-cyan-700 gap-4 mb-12 lg:mb-0" position-sticky>
-          <NavbarContent className="flex lg:flex-col text-xl font-amarga">
+        <Navbar className="ml-0 md:ml-6 lg:ml-20 lg:float-left dark:text-cyan-600 dark:opacity-85 text-cyan-700 mb-12 lg:mb-0" position-sticky>
+          <NavbarContent className="flex lg:flex-col text-xl font-amarga gap-2 lg:gap-6">
             <NavbarBrand className="mb-8">
               <Link href="/">
               <h1 className=" lg:text-8xl font-amarga hidden lg:flex lg:ml-2 hover:saturate-200">A</h1>
