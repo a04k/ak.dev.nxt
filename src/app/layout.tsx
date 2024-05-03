@@ -10,6 +10,8 @@ import {
   NavbarMenu,
   NavbarMenuItem
 } from "@nextui-org/navbar";
+import { ThemeProvider } from "./Components/themeProvider";
+import ToggleMode  from "./Components/themeButton";
 import Link from "next/link";
 import Footer from "./Components/Footer";
 
@@ -25,8 +27,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="mt-12 lg:mt-0 lg:m-0 ml-6 mr-6">
-        <Navbar className="ml-0 md:ml-6 lg:ml-20 lg:float-left dark:text-cyan-600 dark:opacity-85 text-cyan-700 mb-12 lg:mb-0" position-sticky>
+      <body className="mt-12 lg:mt-0 lg:m-0 ml-6 mr-6 dark:bg-dPurp-900 bg-beige-bg">
+      <ThemeProvider
+          attribute="class"
+          defaultTheme="light"
+          enableSystem
+        >
+        <Navbar className="mr-2 ml-0 md:ml-6 lg:ml-20 lg:float-left dark:text-cyan-600 dark:opacity-85 text-cyan-700 mb-12 lg:mb-0" position-sticky="true">
           <NavbarContent className="flex lg:flex-col text-xl font-amarga gap-2 lg:gap-6">
             <NavbarBrand className="mb-8">
               <Link href="/">
@@ -53,12 +60,16 @@ export default function RootLayout({
                 github
               </Link>
             </NavbarItem>
+            <NavbarItem>
+              <ToggleMode/>
+            </NavbarItem>
           </NavbarContent>
         </Navbar>
         <main className="min-h-screen lg:mb-10 lg:ml-24 lg:mr-24 lg:mt-16 px-2 md:px-6 lg:px-24 xl:px-32 2xl:px-64">
           {children}
           <Footer/>
         </main>
+        </ThemeProvider>
       </body>
     </html>
   );

@@ -19,7 +19,8 @@ const config: Config = {
           "600": "#c78d56",
           "700": "#956a40",
           "800": "#64462b",
-          "900": "#322315"
+          "900": "#322315",
+          "bg": "#EFD0A8"
         },
         "dPurp": {
           "50": "#e8e6e6",
@@ -31,7 +32,7 @@ const config: Config = {
           "600": "#100306",
           "700": "#0c0204",
           "800": "#080203",
-          "900": "#040101"
+          "900": "#040101",
         }
       },
       backgroundImage: {
@@ -50,8 +51,7 @@ const config: Config = {
       }
     },
   },
-  plugins: [],
-
-
+  plugins: [], 
+  darkMode: 'class'
 };
 export default config;
