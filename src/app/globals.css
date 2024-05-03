@@ -31,10 +31,6 @@
   src: url(../../public/Fonts/spacemonoI.ttf);
 }
 
-  hr{
-    border-color: black;
-  }
-
 body {
   /*
     FOR THE GRADIENT!
@@ -86,6 +82,8 @@ body {
   }
   .navlink{
     @apply dark:hover:bg-dPurp-500 p-2 px-3 rounded-lg dark:hover:text-beige-300 hover:bg-beige-400 transition-all;
-    ;
+  }
+  hr{
+    @apply dark:border-beige-300 border-black;
   }
 }
