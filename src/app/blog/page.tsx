@@ -27,7 +27,7 @@ return (
             info={post.summary}
           />
         ))} */}
-        Hello there ><
+        Hello there 
       </div>
     </div>
   </main>
