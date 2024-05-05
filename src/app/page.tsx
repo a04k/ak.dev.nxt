@@ -22,7 +22,7 @@ export default function Home() {
       <main className="ml-4">
       {/* Hero*/}
       <div id="hero" className="mb-16">
-        <h1 className="text-6xl mb-6 font-amarga dark:text-emerald-700 text-emerald-800">Ahmed Khaled</h1>
+        <h1 className="text-6xl mb-6 font-amarga dark:text-emerald-600 text-lime-700">Ahmed Khaled</h1>
 
         <div className="font-spmI text-sm lg:text-base">
           <h2>

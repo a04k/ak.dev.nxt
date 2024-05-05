@@ -1,4 +1,4 @@
-const DefCard = ({ href, link, name, info }: { 
+const DefCard = ({ href, link, name, info}: { 
   href: string;
   link: string;
   name: string;

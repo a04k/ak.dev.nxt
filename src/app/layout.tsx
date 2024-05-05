@@ -33,11 +33,11 @@ export default function RootLayout({
           defaultTheme="light"
           enableSystem
         >
-        <Navbar className="mr-2 ml-0 lg:ml-12 2xl:ml-20 lg:float-left dark:text-cyan-600 dark:opacity-85 text-cyan-700 mb-12 lg:mb-0" position-sticky="true">
+        <Navbar className="mr-2 ml-0 lg:ml-12 2xl:ml-20 lg:float-left dark:text-cyan-400 dark:opacity-85 text-cyan-700 mb-12 lg:mb-0" position-sticky="true">
           <NavbarContent className="flex lg:flex-col text-xl font-amarga gap-2 lg:gap-6">
             <NavbarBrand className="mb-8">
               <Link href="/">
-              <h1 className=" px-4 rounded-3xl bg-cyan-800 text-beige-bg dark:text-dPurp-800 lg:text-8xl font-amarga hidden lg:flex lg:ml-2 hover:bg-amber-500">A</h1>
+              <h1 className=" px-4 rounded-3xl dark:bg-cyan-400 bg-cyan-700 text-beige-bg dark:text-dPurp-800 lg:text-8xl font-amarga hidden lg:flex lg:ml-2 dark:hover:bg-beige-300 hover:saturate-200">A</h1>
               </Link>
             </NavbarBrand>
             <NavbarItem>
