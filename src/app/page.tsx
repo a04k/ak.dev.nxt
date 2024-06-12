@@ -22,7 +22,7 @@ export default function Home() {
       <main className="ml-4">
       {/* Hero*/}
       <div id="hero" className="mb-16">
-        <h1 className="text-6xl mb-6 font-amarga dark:text-emerald-600 text-lime-700">Ahmed Khaled</h1>
+        <h1 className="text-6xl mb-6 font-amarga dark:text-emerald-600 text-eb-100">Ahmed Khaled</h1>
 
         <div className="font-spmI text-sm lg:text-base">
           <h2>
@@ -68,7 +68,7 @@ export default function Home() {
 
       {/* Projects */}
       <div id="Projects" className="mb-0">
-        <h1 className="text-6xl mb-6 dark:text-amber-500 text-amber-600 font-amarga">projects</h1>
+        <h1 className="text-6xl mb-6 dark:text-amber-500 text-orange-600 font-amarga">projects</h1>
         <div className="grid grid-cols-1 gap-10 md:grid-cols-2 xl:grid-cols-3 lg:grid-cols-2 font-spmR">
           <DefCard
             href="https://github.com/TheGrandMasons/Naveris"

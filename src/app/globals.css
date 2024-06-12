@@ -62,7 +62,7 @@ body {
   }
 
   .resumeSectionTitle {
-    @apply lg:text-2xl text-xl font-bold mb-4 dark:text-amber-400 text-amber-600;
+    @apply lg:text-2xl text-xl font-bold mb-4 dark:text-amber-400 text-orange-600;
   }
 
   .resumeItem {
@@ -81,7 +81,7 @@ body {
     @apply text-lg ml-auto ;
   }
   .navlink{
-    @apply dark:hover:bg-dPurp-500 p-2 px-3 rounded-lg dark:hover:text-beige-300 hover:bg-beige-400 transition-all;
+    @apply dark:hover:bg-dPurp-500 p-2 px-3 rounded-lg dark:hover:text-beige-300 hover:text-orange-700 hover:bg-beige-100 transition-all;
   }
   hr{
     @apply dark:border-beige-300 border-black opacity-30;

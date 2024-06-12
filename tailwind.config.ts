@@ -33,7 +33,9 @@ const config: Config = {
           "700": "#0c0204",
           "800": "#080203",
           "900": "#040101",
-        }
+        },
+        "eb": {"100" : "#002379"},
+        "lbg": {"100" : "#F6F1E9"} // F9FBE7 good, F6F1E9 cooler (best imo) FFFFE8
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

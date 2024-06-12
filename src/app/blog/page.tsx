@@ -16,7 +16,7 @@ export default function Blog(){
 return (
   <main>
     <div className="ml-4">
-      <h1 className="font-amarga text-6xl text-amber-300 mb-12">latest posts:</h1>
+      <h1 className="font-amarga text-6xl text-eb-100 mb-12">latest posts:</h1>
       <div className="lpContainer grid grid-cols-1 gap-8 font-spmR">
         {/* {posts.map((post) => (
           <DefCard
@@ -27,8 +27,8 @@ return (
             info={post.summary}
           />
         ))} */}
-        Hello there 
       </div>
+      <h1 className="text-3xl font-amarga text-center"> WORK IN PROGRESS </h1>
     </div>
   </main>
 )};

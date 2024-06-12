@@ -1,43 +1,48 @@
-import Link from 'next/link';
+import ToggleMode  from "./themeButton";
+import Link from "next/link";
+import {
+  Navbar, 
+  NavbarBrand, 
+  NavbarContent, 
+  NavbarItem, 
+  NavbarMenuToggle,
+  NavbarMenu,
+  NavbarMenuItem
+} from "@nextui-org/navbar";
 
-const navItems = {
-  '/': {
-    name: 'home',
-  },
-  '/work': {
-    name: 'work',
-  },
-  '/blog': {
-    name: 'blog',
-  },
-  '/guestbook': {
-    name: 'guestbook',
-  },
-};
-
-export function Navbar() {
+export function Nav() {
   return (
-    <aside className="-ml-[8px] mb-16 tracking-tight">
-      <div className="lg:sticky lg:top-20">
-        <nav
-          className="flex flex-row items-start relative px-0 pb-0 fade md:overflow-auto scroll-pr-6 md:relative"
-          id="nav"
-        >
-          <div className="flex flex-row space-x-0 pr-10">
-            {Object.entries(navItems).map(([path, { name }]) => {
-              return (
-                <Link
-                  key={path}
-                  href={path}
-                  className="transition-all hover:text-neutral-800 dark:hover:text-neutral-200 flex align-middle relative py-1 px-2"
-                >
-                  {name}
-                </Link>
-              );
-            })}
-          </div>
-        </nav>
-      </div>
-    </aside>
+    <Navbar className="mr-2 ml-0 lg:ml-12 2xl:ml-20 lg:float-left dark:text-cyan-400 dark:opacity-85 text-orange-400 mb-12 lg:mb-0" position-sticky="true">
+          <NavbarContent className="flex lg:flex-col text-xl font-amarga gap-2 lg:gap-6">
+            <NavbarBrand className="mb-8">
+              <Link href="/">
+              <h1 className=" px-4 rounded-3xl dark:bg-cyan-400 bg-orange-700 text-lbg-100 dark:text-dPurp-800 lg:text-8xl font-amarga hidden lg:flex lg:ml-2 dark:hover:bg-beige-300 hover:saturate-150">A</h1>
+              </Link>
+            </NavbarBrand>
+            <NavbarItem>
+              <Link color="foreground" href="/" className="navlink">
+                home
+              </Link>
+            </NavbarItem>
+            <NavbarItem>
+              <Link color="foreground" href="/resume" className="navlink">
+                resume
+              </Link>
+            </NavbarItem>
+            <NavbarItem>
+              <Link color="foreground" href="/blog" className="navlink">
+                blog
+              </Link>
+            </NavbarItem>
+            <NavbarItem>
+              <Link color="foreground" href="https://github.com/a04k" className="navlink">
+                github
+              </Link>
+            </NavbarItem>
+            <NavbarItem>
+              <ToggleMode/>
+            </NavbarItem>
+          </NavbarContent>
+        </Navbar>
   );
 }
