@@ -35,7 +35,15 @@ const config: Config = {
           "900": "#040101",
         },
         "eb": {"100" : "#002379"},
-        "lbg": {"100" : "#F6F1E9"} // F9FBE7 good, F6F1E9 cooler (best imo) FFFFE8
+        "lbg": {"100" : "#F6F1E9"}, // F9FBE7 good, F6F1E9 cooler (best imo) FFFFE8
+        "dbg": {"100" : "#000000"},
+        "amrg": {"100" : "#A7D129"}, //amr racing green
+        "olive": {
+          "100" : "#3E432E",
+          "200" : "#616F39"
+        }, 
+        "sl": {"100" : "#EC625F"},
+
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

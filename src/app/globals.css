@@ -62,7 +62,7 @@ body {
   }
 
   .resumeSectionTitle {
-    @apply lg:text-2xl text-xl font-bold mb-4 dark:text-amber-400 text-orange-600;
+    @apply lg:text-2xl text-xl font-bold mb-4 dark:text-sl-100 text-orange-600;
   }
 
   .resumeItem {

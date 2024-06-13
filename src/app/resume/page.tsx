@@ -1,8 +1,8 @@
 export default function Resume(){
   return (
     <main className="mb-16">
-      <div className="font-amarga mb-10 dark:text-emerald-600 text-eb-100" id="intro">
-        <h1 className="lg:text-5xl md:text-6xl text-4xl" >Ahmed Khaled</h1>
+      <div className="font-amarga mb-10 dark:text-amrg-100 text-blue-900" id="intro">
+        <h1 className="lg:text-5xl md:text-6xl text-5xl" >Ahmed Khaled</h1>
         <h2 className="lg:text-2xl md:text-xl text-base">Sophomore Computer Science Student , Junior Web Developer </h2> 
       </div>
       <div className="resumeSection">

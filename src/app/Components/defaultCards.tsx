@@ -8,7 +8,7 @@ const DefCard = ({ href, link, name, info}: {
   return (
       <a
         href={href}
-        className="group rounded-lg border border-transparent px-4 py-5 transition-colors dark:border-none hover:border-orange-600 hover:bg-beige-100 hover:dark:border-neutral-700 hover:dark:bg-dPurp-800 hover:dark:text-beige-300"
+        className="group rounded-lg border border-transparent px-4 py-5 transition-colors dark:border-none hover:border-orange-600 hover:bg-beige-100 hover:dark:border-neutral-700 hover:dark:bg-dPurp-800 hover:dark:opacity-85 hover:dark:text-beige-200"
         target={link}
         rel="noopener noreferrer"
       >
