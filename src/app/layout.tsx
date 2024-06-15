@@ -23,7 +23,7 @@ export default function RootLayout({
           enableSystem
         >
         <Nav/>
-        <main className="min-h-screen lg:mb-10 2xl:ml-10 xl:ml-24 lg:ml-28 lg:mr-24 lg:mt-16 px-2 md:px-6 lg:px-24 xl:px-32 2xl:px-64">
+        <main className="min-h-screen 2xl:ml-10 xl:ml-24 lg:ml-28 lg:mr-24 lg:mt-16 px-2 md:px-6 lg:px-24 xl:px-32 2xl:px-64">
           {children}
         </main>
         <Footer/>

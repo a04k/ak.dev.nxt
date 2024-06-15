@@ -16,7 +16,7 @@ export default function Blog(){
 return (
   <main>
     <div className="ml-4">
-      <h1 className="font-amarga text-6xl text-eb-100 dark:text-sl-100 mb-12">latest posts:</h1>
+      <h1 className="font-amarga text-5xl text-eb-100 dark:text-sl-100 mb-12">Latest Posts:</h1>
       <div className="lpContainer grid grid-cols-1 gap-8 font-spmR">
         {/* {posts.map((post) => (
           <DefCard

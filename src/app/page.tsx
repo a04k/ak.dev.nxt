@@ -19,10 +19,10 @@ export default function Home() {
   }
   return (
     <div>
-      <main className="ml-4">
+      <main className="md:ml-2 md:mr-2 lg:ml-4 lg:mr-4">
       {/* Hero*/}
       <div id="hero" className="mb-16">
-        <h1 className="text-5xl md:text-6xl mb-6 font-amarga text-blue-900 dark:text-sl-100 ">Ahmed Khaled</h1>
+        <h1 className="text-6xl mb-6 font-amarga text-blue-900 dark:text-sl-100">Ahmed Khaled</h1>
 
         <div className="font-spmI text-sm lg:text-base">
           <h2>
