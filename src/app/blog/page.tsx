@@ -1,9 +1,8 @@
 "use client";
 import { useEffect, useState } from "react";
-import DefCard from "../Components/defaultCards"
+import DefCard from "../Components/defaultCards";
 
-export default function Blog(){
-
+export default function Blog() {
   // const [posts, setPosts] = useState([]);
 
   // useEffect(() => {
@@ -13,12 +12,14 @@ export default function Blog(){
   //     .catch((err) => console.error(err));
   // }, []);
 
-return (
-  <main>
-    <div className="ml-4">
-      <h1 className="font-amarga text-5xl text-eb-100 dark:text-sl-100 mb-12">Latest Posts:</h1>
-      <div className="lpContainer grid grid-cols-1 gap-8 font-spmR">
-        {/* {posts.map((post) => (
+  return (
+    <main>
+      <div className="ml-4">
+        <h1 className="font-amarga text-5xl text-eb-100 dark:text-beige-100 mb-12">
+          Latest Posts:
+        </h1>
+        <div className="lpContainer grid grid-cols-1 gap-8 font-spmR">
+          {/* {posts.map((post) => (
           <DefCard
             key={post.id}
             href={/blog/posts/${slug}}
@@ -27,8 +28,11 @@ return (
             info={post.summary}
           />
         ))} */}
+        </div>
+        <h1 className="text-3xl font-spmBI text-center mt-48">
+          WORK IN PROGRESS
+        </h1>
       </div>
-      <h1 className="text-3xl font-amarga text-center"> WORK IN PROGRESS </h1>
-    </div>
-  </main>
-)};
+    </main>
+  );
+}

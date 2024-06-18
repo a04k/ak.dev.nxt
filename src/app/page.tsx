@@ -20,83 +20,100 @@ export default function Home() {
   return (
     <div>
       <main className="md:ml-2 md:mr-2 lg:ml-4 lg:mr-4">
-      {/* Hero*/}
-      <div id="hero" className="mb-16">
-        <h1 className="text-6xl mb-6 font-amarga text-blue-900 dark:text-sl-100">Ahmed Khaled</h1>
-
-        <div className="font-spmI text-sm lg:text-base">
-          <h2>
-            computer science student, web dev, chronically online.
-            <br/>you&apos;re currently looking at my website built with{" "}
-            <u>Next.js</u> and <u>Tailwind</u>{" "}
-          </h2>
-          <h2>
-            a little bit about me:
-            <ul className="lg:ml-10 ml-5 list-disc">
-              <li>in my sophomore year of pursuing a B.S in computer science @ ain shams university </li>
-              <li>learning & writing code in a few languages mainly Javascript/TypeScript, C++, Python </li>
-              <li>sometimes do a bit of design work mainly graphic design but also UI</li>
-              <li>currently a backend development team member at Open Source Community FCIS </li>
-              <li>competed in NASA Space Apps Cairo Hackathon 2023</li>
+        {/* Hero*/}
+        <div id="hero" className="mb-16">
+          <h1 className="text-6xl mb-6 font-amarga text-blue-900 dark:text-beige-100">
+            Ahmed Khaled
+          </h1>
+          <div className="font-spmI text-sm lg:text-base">
+            <h2>
+              computer science student, web dev, chronically online.
+              <br />
+              you&apos;re currently looking at my website built with{" "}
+              <u>Next.js</u> and <u>Tailwind</u>{" "}
+            </h2>
+            <h2>
+              a little bit about me:
+              <ul className="lg:ml-10 ml-5 list-disc">
+                <li>
+                  in my sophomore year of pursuing a B.S in computer science @
+                  ain shams university{" "}
+                </li>
+                <li>
+                  learning & writing code in a few languages mainly
+                  Javascript/TypeScript, C++, Python{" "}
+                </li>
+                <li>
+                  sometimes do a bit of design work mainly graphic design but
+                  also UI
+                </li>
+                <li>
+                  currently a backend development team member at Open Source
+                  Community FCIS{" "}
+                </li>
+                <li>competed in NASA Space Apps Cairo Hackathon 2023</li>
+              </ul>
+            </h2>
+            <ul className="font-sm mt-8 flex flex-row text-neutral-600 dark:text-neutral-300 ">
+              <li>
+                <a
+                  className="lg:flex transition-all items-center hover:text-neutral-800 dark:hover:text-neutral-100"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  href="https://www.linkedin.com/in/ahmedkhaled14/"
+                >
+                  <ArrowIcon />
+                  <p className="ml-2 lg:h-7">LinkedIn</p>
+                </a>
+              </li>{" "}
+              &nbsp; &nbsp;
+              <li>
+                <a
+                  className="lg:flex items-center transition-all hover:text-neutral-800 dark:hover:text-neutral-100"
+                  rel="noopener noreferrer"
+                  href="mailto:63ahmedkhaled@gmail.com"
+                >
+                  <ArrowIcon />
+                  <p className="ml-2 lg:h-7">email me</p>
+                </a>
+              </li>
             </ul>
-          </h2>
-          <ul className="font-sm mt-8 flex flex-row text-neutral-600 dark:text-neutral-300 ">
-            <li>
-              <a
-                className="lg:flex transition-all items-center hover:text-neutral-800 dark:hover:text-neutral-100"
-                rel="noopener noreferrer"
-                target="_blank"
-                href="https://www.linkedin.com/in/ahmedkhaled14/"
-              >
-                <ArrowIcon />
-                <p className="ml-2 lg:h-7">LinkedIn</p>
-              </a>
-            </li> &nbsp; &nbsp;
-            <li>
-              <a
-                className="lg:flex items-center transition-all hover:text-neutral-800 dark:hover:text-neutral-100"
-                rel="noopener noreferrer"
-                href="mailto:63ahmedkhaled@gmail.com"
-              >
-                <ArrowIcon />
-                <p className="ml-2 lg:h-7">email me</p>
-              </a>
-            </li>
-          </ul>
+          </div>
         </div>
-      </div>
 
-      {/* Projects */}
-      <div id="Projects" className="mb-0">
-        <h1 className="text-6xl mb-8 dark:text-amrg-100 text-orange-600 font-amarga">projects</h1>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 xl:grid-cols-3 lg:grid-cols-2 font-spmR">
-          <DefCard
-            href="https://github.com/TheGrandMasons/Naveris"
-            link="_blank"
-            name="Naveris"
-            info="A NASA Space Apps 2023 AI Project which predicts natural disasters and provides early warnings"
-          />
-          <DefCard
-            href="https://github.com/a04k/c207proj"
-            link="_blank"
-            name="Club DB"
-            info="A Club Database Project for my COMP207 Database systems university course."
-          />
-          <DefCard
-            href="https://github.com/a04k/ak.dev.nxt"
-            link="_blank"
-            name="Portfolio"
-            info="My Portfolio and blog website built with Next.js Typescript and TailwindCSS (The site you're currently visiting!)"
-          />
-          <DefCard
-            href="https://github.com/a04k/"
-            link="_blank"
-            name="OSC Site"
-            info="OSC (Open Source Community)'s web app built using the MERN Stack, kitted with a headless CMS"
-          />
+        {/* Projects */}
+        <div id="Projects" className="mb-0">
+          <h1 className="text-6xl mb-8 text-orange-600 dark:text-dr-100 font-amarga">
+            projects
+          </h1>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 xl:grid-cols-3 lg:grid-cols-2 font-spmR">
+            <DefCard
+              href="https://github.com/TheGrandMasons/Naveris"
+              link="_blank"
+              name="Naveris"
+              info="A NASA Space Apps 2023 AI Project which predicts natural disasters and provides early warnings"
+            />
+            <DefCard
+              href="https://github.com/a04k/c207proj"
+              link="_blank"
+              name="Club DB"
+              info="A Club Database Project for my COMP207 Database systems university course."
+            />
+            <DefCard
+              href="https://github.com/a04k/ak.dev.nxt"
+              link="_blank"
+              name="Portfolio"
+              info="My Portfolio and blog website built with Next.js Typescript and TailwindCSS (The site you're currently visiting!)"
+            />
+            <DefCard
+              href="https://github.com/a04k/"
+              link="_blank"
+              name="OSC Site"
+              info="OSC (Open Source Community)'s web app built using the MERN Stack, kitted with a headless CMS"
+            />
+          </div>
         </div>
-      </div>
-    </main>
+      </main>
     </div>
   );
 }
