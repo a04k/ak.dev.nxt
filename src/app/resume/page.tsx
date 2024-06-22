@@ -16,6 +16,8 @@ export default function Resume() {
 
   if (!mounted) return null;
   
+  // this is absolutely awful and needs optimization, cant just fix a problem
+  // by throwing files at it.
   const imageSrc = resolvedTheme === 'dark' ? '/Images/downloadIcon.png' : '/Images/downloadIconLight.png';
 
   return (
