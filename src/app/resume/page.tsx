@@ -7,7 +7,7 @@ export default function Resume() {
         className="font-amarga mb-10 dark:text-beige-100 text-blue-900 flex-column"
         id="intro"
       >
-        <h1 className="lg:text-5xl md:text-6xl text-5xl">Ahmed Khaled</h1>
+        <h1 className="md:text-6xl text-5xl">Ahmed Khaled</h1>
         <h2 className="lg:text-2xl md:text-xl text-base">
           Sophomore Computer Science Student , Junior Web Developer{" "}
         </h2>
