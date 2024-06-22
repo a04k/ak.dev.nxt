@@ -1,26 +1,34 @@
 import Image from "next/image";
 export default function Resume() {
-  // const downloadIco = "/downloadIcon.png"
+
   return (
     <main className="mb-16">
       <div
-        className="font-amarga mb-10 dark:text-beige-100 text-blue-900 flex-column"
+        className="font-amarga mb-10 dark:text-beige-100 text-blue-900 flex"
         id="intro"
       >
-        <h1 className="md:text-6xl text-5xl">Ahmed Khaled</h1>
-        <h2 className="lg:text-2xl md:text-xl text-base">
-          Sophomore Computer Science Student , Junior Web Developer{" "}
-        </h2>
-        {/* <Image 
-          alt ="Download Resume"
-          src={downloadIco} 
-          width={128}
-          height={128}
-        /> */}
+        <div className="flex-column">
+          <h1 className="md:text-6xl text-5xl">Ahmed Khaled</h1>
+          <h2 className="lg:text-2xl md:text-xl text-base">
+            Sophomore Computer Science Student , Junior Web Developer{" "}
+          </h2>
+        </div>
+        <a 
+          className="invisible md:visible mt-4 ml-96 cursor-pointer" 
+          href= "/Files/AKResume.pdf" 
+          download="AKResume.pdf"
+        >
+          <Image 
+            src="/Images/downloadIcon.png"
+            width={64}
+            height={64}
+            alt ="Download Resume"
+           />
+        </a>
       </div>
       <div className="resumeSection">
         <h2 className="resumeSectionTitle">Education</h2>
-        <hr />
+        <hr/>
         <div className="resumeItem">
           <h3 className="resumeContentTitle">
             {" "}
