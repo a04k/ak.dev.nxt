@@ -1,27 +1,28 @@
-"use client"
+"use client";
 
-import { useTheme } from 'next-themes';
-import { useEffect, useState } from 'react';
+import { useTheme } from "next-themes";
+import { useEffect, useState } from "react";
 import Image from "next/image";
-
+import DownloadBtn from "../Components/downloadBtn";
 export default function Resume() {
-  const { resolvedTheme } = useTheme();
-  // from here to line 17 adds security to prevent this from running
-  // without the component being mounted yet, (svelte wouldve simplified this.)
-  const [mounted, setMounted] = useState(false);
+  // Old Download Icon Image Theme Functions (pre-svg)
+  // const { resolvedTheme } = useTheme();
+  // // from here to line 17 adds security to prevent this from running
+  // // without the component being mounted yet, (svelte wouldve simplified this.)
+  // const [mounted, setMounted] = useState(false);
 
-  useEffect(() => {
-    setMounted(true);
-  }, []);
+  // useEffect(() => {
+  //   setMounted(true);
+  // }, []);
 
-  if (!mounted) return null;
-  
-  // this is absolutely awful and needs optimization, cant just fix a problem
-  // by throwing files at it.
-  const imageSrc = resolvedTheme === 'dark' ? '/Images/downloadIcon.png' : '/Images/downloadIconLight.png';
+  // if (!mounted) return null;
+
+  // // this is absolutely awful and needs optimization, cant just fix a problem
+  // // by throwing files at it.
+  // const imageSrc = resolvedTheme === 'dark' ? '/Images/downloadIcon.png' : '/Images/downloadIconLight.png';
 
   return (
-    <main className="mb-16">
+    <main>
       <div
         className="font-amarga mb-10 dark:text-beige-100 text-blue-900 flex"
         id="intro"
@@ -32,22 +33,13 @@ export default function Resume() {
             Sophomore Computer Science Student , Junior Web Developer{" "}
           </h2>
         </div>
-        <a 
-          className="invisible md:visible mt-4 ml-96 cursor-pointer" 
-          href= "/Files/AKResume.pdf" 
-          download="AKResume.pdf"
-        >
-          <Image 
-            src= { imageSrc }
-            width={64}
-            height={64}
-            alt ="Download Resume"
-           />
-        </a>
+        <div className="hidden lg:block ml-96 mt-4 w-14 cursor-pointer"> {/*using hidden and block instead of invis and vis, even when invis it can affect other elems margins.*/}
+          <DownloadBtn />
+        </div>
       </div>
       <div className="resumeSection">
         <h2 className="resumeSectionTitle">Education</h2>
-        <hr/>
+        <hr />
         <div className="resumeItem">
           <h3 className="resumeContentTitle">
             {" "}

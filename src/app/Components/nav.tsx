@@ -16,7 +16,7 @@ export function Nav() {
       <NavbarContent className="flex lg:flex-col font-amarga lg:gap-6">
         <NavbarBrand className="mb-8">
           <Link href="/">
-            <h1 className=" px-4 rounded-3xl bg-orange-600 dark:bg-dr-100 text-lbg-100 dark:text-dPurp-800 py-4 lg:text-7xl font-refrankt hidden lg:flex lg:ml-2 hover:saturate-150">
+            <h1 className=" px-4 rounded-3xl bg-orange-600 dark:bg-dr text-lbg dark:text-dPurp-800 py-4 lg:text-7xl font-refrankt hidden lg:flex lg:ml-2 hover:saturate-150">
               A
             </h1>
           </Link>

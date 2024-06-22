@@ -6,7 +6,7 @@ export default function Footer() {
       <div className="text-center">
         <CityTime />
       </div>
-      <p className="text-center dark:text-dr-100 text-orange-600">ahmed.dev</p>
+      <p className="text-center dark:text-dr text-orange-600">ahmed.dev</p>
     </div>
   );
 }

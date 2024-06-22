@@ -83,7 +83,7 @@ export default function Home() {
 
         {/* Projects */}
         <div id="Projects" className="mb-0">
-          <h1 className="text-6xl mb-8 text-orange-600 dark:text-dr-100 font-amarga">
+          <h1 className="text-6xl mb-8 text-orange-600 dark:text-dr font-amarga">
             projects    
           </h1>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 xl:grid-cols-3 lg:grid-cols-2 font-spmR">
