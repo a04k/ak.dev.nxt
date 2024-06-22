@@ -1,5 +1,22 @@
+"use client"
+
+import { useTheme } from 'next-themes';
+import { useEffect, useState } from 'react';
 import Image from "next/image";
+
 export default function Resume() {
+  const { resolvedTheme } = useTheme();
+  // from here to line 17 adds security to prevent this from running
+  // without the component being mounted yet, (svelte wouldve simplified this.)
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!mounted) return null;
+  
+  const imageSrc = resolvedTheme === 'dark' ? '/Images/downloadIcon.png' : '/Images/downloadIconLight.png';
 
   return (
     <main className="mb-16">
@@ -19,7 +36,7 @@ export default function Resume() {
           download="AKResume.pdf"
         >
           <Image 
-            src="/Images/downloadIcon.png"
+            src= { imageSrc }
             width={64}
             height={64}
             alt ="Download Resume"
