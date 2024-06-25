@@ -3,6 +3,7 @@ import "./globals.css";
 import { ThemeProvider } from "./Components/themeProvider";
 import Footer from "./Components/Footer";
 import { Nav } from "./Components/nav";
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 export const metadata: Metadata = {
   title: "Ahmed Khaled",
