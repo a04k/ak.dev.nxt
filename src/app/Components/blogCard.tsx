@@ -6,7 +6,7 @@ interface BlogCardProps {
   date: string;
 }
 
-const BlogCard: React.FC<DefCardProps> = ({ href, link, name, info, date }) => {
+const BlogCard: React.FC<BlogCardProps> = ({ href, link, name, info, date }) => {
   return (
     <a href={href} target={link} rel="noopener noreferrer">
       <div className="min-h-[169px] max-w-[600px] group rounded-lg border border-transparent px-4 py-6 transition-colors hover:border-orange-600 dark:hover:border-dr hover:dark:bg-dPurp-800 hover:dark:opacity-85">
