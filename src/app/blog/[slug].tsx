@@ -5,7 +5,7 @@ interface Post {
   id: number;
   attributes: {
     Title: string;
-    ShortSummary: string;
+    Description: string;
   };
 }
 
@@ -22,7 +22,7 @@ const SinglePost: React.FC = () => {
         if (!slug) {
           return;
         }
-        const res = await fetch(`http://localhost:1337/api/blogs?filters[Title.contains]=${slug}`);
+        const res = await fetch(`https://ak-dev-cms.onrender.com/api/posts?filters[urlSlug.contains]=${slug}`);
         if (!res.ok) {
           throw new Error("Failed to fetch post");
         }
@@ -30,7 +30,7 @@ const SinglePost: React.FC = () => {
         const post = data.data[0];
         setPost(post);
       } catch (err) {
-        setError(err);
+        setError(err as Error);
       } finally {
         setIsLoading(false);
       }
@@ -55,7 +55,7 @@ const SinglePost: React.FC = () => {
     <main>
       <div className="ml-4">
         <h1>{post.attributes.Title}</h1>
-        <p>{post.attributes.ShortSummary}</p>
+        <p>{post.attributes.Description}</p>
         {/* Additional content based on your post data structure */}
       </div>
     </main>
