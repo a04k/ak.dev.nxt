@@ -33,7 +33,7 @@ const Blog: React.FC = () => {
 
         setPosts(sortedPosts);
       } catch (err) {
-        setError(err);
+        setError(err as Error);
       } finally {
         setIsLoading(false);
       }
