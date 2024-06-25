@@ -5,22 +5,24 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 import DownloadBtn from "../Components/downloadBtn";
 export default function Resume() {
-  // Old Download Icon Image Theme Functions (pre-svg)
-  // const { resolvedTheme } = useTheme();
+
+  /* Old Download Icon Image Theme Functions (pre-svg)
+  const { resolvedTheme } = useTheme();
   // // from here to line 17 adds security to prevent this from running
   // // without the component being mounted yet, (svelte wouldve simplified this.)
-  // const [mounted, setMounted] = useState(false);
+  const [mounted, setMounted] = useState(false);
 
-  // useEffect(() => {
-  //   setMounted(true);
-  // }, []);
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
-  // if (!mounted) return null;
+  if (!mounted) return null;
 
   // // this is absolutely awful and needs optimization, cant just fix a problem
   // // by throwing files at it.
-  // const imageSrc = resolvedTheme === 'dark' ? '/Images/downloadIcon.png' : '/Images/downloadIconLight.png';
-
+  const imageSrc = resolvedTheme === 'dark' ? '/Images/downloadIcon.png' : '/Images/downloadIconLight.png';
+  */
+  
   return (
     <main>
       <div

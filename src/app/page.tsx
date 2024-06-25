@@ -1,4 +1,4 @@
-import DefCard from "./Components/defaultCards";
+import ProjCard from "./Components/projCards";
 
 export default function Home() {
   function ArrowIcon() {
@@ -87,25 +87,25 @@ export default function Home() {
             projects    
           </h1>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 xl:grid-cols-3 lg:grid-cols-2 font-spmR">
-            <DefCard
+            <ProjCard
               href="https://github.com/TheGrandMasons/Naveris"
               link="_blank"
               name="Naveris"
               info="A NASA Space Apps 2023 AI Project which predicts natural disasters and provides early warnings"
             />
-            <DefCard
+            <ProjCard
               href="https://github.com/a04k/c207proj"
               link="_blank"
               name="Club DB"
               info="A Club Database Project for my COMP207 Database systems university course."
             />
-            <DefCard
+            <ProjCard
               href="https://github.com/a04k/ak.dev.nxt"
               link="_blank"
               name="Portfolio"
               info="My Portfolio and blog website built with Next.js Typescript and TailwindCSS (The site you're currently visiting!)"
             />
-            <DefCard
+            <ProjCard
               href="https://github.com/a04k/"
               link="_blank"
               name="OSC Site"

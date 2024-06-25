@@ -1,3 +1,5 @@
+"use client"
+import { useState, useEffect } from "react";
 import ToggleMode from "./themeButton";
 import Link from "next/link";
 import {
@@ -8,40 +10,50 @@ import {
 } from "@nextui-org/navbar";
 
 export function Nav() {
+  const [isSticky, setIsSticky] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY;
+      const triggerHeight = window.innerHeight * 0.8;
+      setIsSticky(scrollPosition > triggerHeight);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <Navbar
-      className="mr-2 lg:ml-12 2xl:ml-20 lg:float-left dark:text-beige-100 text-orange-500 mb-12 lg:mb-0"
-      position-sticky="true"
+      className={`mr-2 lg:ml-12 2xl:ml-20 mb-12 lg:mb-0 ${isSticky ? 'fixed top-1/2 transform -translate-y-1/2' : 'lg:float-left'} dark:text-beige-100 text-orange-500 transition-all duration-300`}
     >
       <NavbarContent className="flex lg:flex-col font-amarga lg:gap-6">
         <NavbarBrand className="mb-8">
           <Link href="/">
-            <h1 className=" px-4 rounded-3xl bg-orange-600 dark:bg-dr text-lbg dark:text-dPurp-800 py-4 lg:text-7xl font-refrankt hidden lg:flex lg:ml-2 hover:saturate-150">
+            <h1 className="px-4 rounded-3xl bg-orange-600 dark:bg-dr text-lbg dark:text-dPurp-800 py-4 lg:text-7xl font-refrankt hidden lg:flex lg:ml-2 hover:saturate-150">
               A
             </h1>
           </Link>
         </NavbarBrand>
         <NavbarItem>
-          <Link color="foreground" href="/" className="navlink">
+          <Link href="/" className="navlink">
             home
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link color="foreground" href="/resume" className="navlink">
+          <Link href="/resume" className="navlink">
             resume
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link color="foreground" href="/blog" className="navlink">
+          <Link href="/blog" className="navlink">
             blog
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link
-            color="foreground"
-            href="https://github.com/a04k"
-            className="navlink"
-          >
+          <Link href="https://github.com/a04k" className="navlink">
             github
           </Link>
         </NavbarItem>

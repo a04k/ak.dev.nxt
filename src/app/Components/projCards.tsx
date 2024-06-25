@@ -1,9 +1,11 @@
-const DefCard = ({href,link,name,info}: {
+interface ProjCardProps {
   href: string;
   link: string;
   name: string;
   info: string;
-}) => {
+}
+
+const ProjCard: React.FC<DefCardProps> = ({ href, link, name, info }) => {
   return (
     <a
       href={href}
@@ -22,4 +24,4 @@ const DefCard = ({href,link,name,info}: {
   );
 };
 
-export default DefCard;
+export default ProjCard;
