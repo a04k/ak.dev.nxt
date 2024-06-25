@@ -4,10 +4,10 @@ import BlogCard from "../Components/blogCard";
 interface Post {
   id: number;
   attributes: {
-    Title: String;
-    Description: String;
-    createdAt: String;
-    urlSlug: String;
+    Title: string;
+    Description: string;
+    createdAt: string;
+    urlSlug: string;
   };
 }
 
