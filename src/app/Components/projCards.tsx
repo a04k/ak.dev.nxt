@@ -5,7 +5,7 @@ interface ProjCardProps {
   info: string;
 }
 
-const ProjCard: React.FC<DefCardProps> = ({ href, link, name, info }) => {
+const ProjCard: React.FC<ProjCardProps> = ({ href, link, name, info }) => {
   return (
     <a
       href={href}
