@@ -1,5 +1,5 @@
-"use client"
-import { useState, useEffect } from "react";
+//"use client"
+//import { useState, useEffect } from "react";
 import ToggleMode from "./themeButton";
 import Link from "next/link";
 import {
@@ -10,25 +10,24 @@ import {
 } from "@nextui-org/navbar";
 
 export function Nav() {
-  const [isSticky, setIsSticky] = useState(false);
+  // const [isSticky, setIsSticky] = useState(false);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollPosition = window.scrollY;
-      const triggerHeight = window.innerHeight * 0.8;
-      setIsSticky(scrollPosition > triggerHeight);
-    };
+  // useEffect(() => {
+  //   const handleScroll = () => {
+  //     const scrollPosition = window.scrollY;
+  //     const triggerHeight = window.innerHeight * 0.8;
+  //     setIsSticky(scrollPosition > triggerHeight);
+  //   };
 
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
-
+  //   window.addEventListener("scroll", handleScroll);
+  //   return () => {
+  //     window.removeEventListener("scroll", handleScroll);
+  //   };
+  // }, []);
+  //  Experimenting with keeping it sticky, but also moves it to the center vertically {/*isSticky ? 'fixed top-1/2 transform -translate-y-1/2' : 'lg:float-left'*/}
   return (
-    <Navbar
-      className={`mr-2 lg:ml-12 2xl:ml-20 mb-12 lg:mb-0 ${isSticky ? 'fixed top-1/2 transform -translate-y-1/2' : 'lg:float-left'} dark:text-beige-100 text-orange-500 transition-all duration-300`}
-    >
+    <Navbar  
+      className="mt-4 xl:mt-0 mr-2 lg:ml-12 xl:ml-14 2xl:ml-16 mb-12 lg:mb-0 lg:float-left dark:text-beige-100 text-orange-500 transition-all duration-300">
       <NavbarContent className="flex lg:flex-col font-amarga lg:gap-6">
         <NavbarBrand className="mb-8">
           <Link href="/">

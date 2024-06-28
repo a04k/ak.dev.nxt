@@ -1,6 +1,7 @@
 "use client";
 import { useState, useEffect } from "react";
 import BlogCard from "../Components/blogCard";
+
 interface Post {
   id: number;
   attributes: {
@@ -24,13 +25,12 @@ const Blog: React.FC = () => {
           throw new Error("Failed to fetch posts");
         }
         const data = await res.json();
-
+        
         // sort posts by id in descending order (latest first because ID is self/auto incrementing)
         // this is a pretty horrible implementation IMO, Change later.
         // nvm goated implementation 🐐
-
         const sortedPosts = data.data.sort((a: Post, b: Post) => b.id - a.id);
-
+        
         setPosts(sortedPosts);
       } catch (err) {
         setError(err as Error);
@@ -56,7 +56,7 @@ const Blog: React.FC = () => {
     }
 
     return (
-      <div className="lpContainer grid grid-cols-1 xl:grid-cols-2 gap-10 font-spmR">
+      <div className="lpContainer grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-6 lg:gap-8 font-spmR">
         {posts.map((post) => (
           <BlogCard
             key={post.id}
@@ -64,7 +64,7 @@ const Blog: React.FC = () => {
             link="_self"
             name={post.attributes.Title}
             info={post.attributes.Description}
-            date={post.attributes.createdAt.split('T')[0]}
+            date={post.attributes.createdAt.split("T")[0]}
           />
         ))}
       </div>
@@ -77,7 +77,7 @@ const Blog: React.FC = () => {
         <h1 className="font-amarga text-6xl text-eb dark:text-beige-100 mb-12">
           Latest Posts:
         </h1>
-        <div className= "font-amarga text-xl text-orange-600 dark:text-dr">
+        <div className="font-amarga text-xl text-orange-600 dark:text-dr">
           {renderContent()}
         </div>
       </div>
