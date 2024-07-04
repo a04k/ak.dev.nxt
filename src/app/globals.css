@@ -73,11 +73,11 @@ body {
   }
 
   .resumeContent {
-    @apply text-base mb-4;
+    @apply text-base mb-4 font-spmI;
   }
 
   .resumePoint {
-    @apply text-lg ml-auto;
+    @apply text-lg ml-auto font-spmB;
   }
   .navlink {
     @apply dark:hover:bg-dr p-2 px-3 rounded-lg dark:hover:text-beige-200 hover:text-blue-900 hover:bg-orange-200 text-lg md:text-xl transition-all;

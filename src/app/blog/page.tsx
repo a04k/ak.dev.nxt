@@ -1,4 +1,5 @@
 "use client";
+
 import { useState, useEffect } from "react";
 import BlogCard from "../Components/blogCard";
 
@@ -26,10 +27,10 @@ const Blog: React.FC = () => {
         }
         const data = await res.json();
         
+        const sortedPosts = data.data.sort((a: Post, b: Post) => b.id - a.id);
         // sort posts by id in descending order (latest first because ID is self/auto incrementing)
         // this is a pretty horrible implementation IMO, Change later.
         // nvm goated implementation 🐐
-        const sortedPosts = data.data.sort((a: Post, b: Post) => b.id - a.id);
         
         setPosts(sortedPosts);
       } catch (err) {

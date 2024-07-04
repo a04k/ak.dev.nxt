@@ -1,9 +1,7 @@
 "use client";
 
-import { useState, useEffect } from "react";
 import { useRouter } from "next/router";
-import Link from "next/link";
-import BlogCard from "../Components/blogCard";
+import { useEffect, useState } from "react";
 
 interface Post {
   id: number;
@@ -27,11 +25,12 @@ const BlogPost: React.FC = () => {
   useEffect(() => {
     const fetchPosts = async () => {
       try {
-        const res = await fetch("https://ak-dev-cms.onrender.com/api/posts?populate=*");
+        const res : Response = await fetch("https://ak-dev-cms.onrender.com/api/posts?populate=*");
         if (!res.ok) {
           throw new Error("Failed to fetch posts");
         }
-        const data = await res.json();
+        const data = await res.json(); // type : any is default
+        
         const sortedPosts = data.data.sort((a: Post, b: Post) => b.id - a.id);
         setPosts(sortedPosts);
 
@@ -39,7 +38,7 @@ const BlogPost: React.FC = () => {
         if (currentPost) {
           setPost(currentPost);
         } else {
-          router.push("/blog"); // Redirect to blog if post not found
+          router.push("/blog"); // redirect to blog if post not found
         }
       } catch (err) {
         setError(err as Error);
@@ -53,7 +52,7 @@ const BlogPost: React.FC = () => {
     }
   }, [slug, router]);
 
-  if (isLoading) {
+  if(isLoading) {
     return <div>Loading...</div>;
   }
 
@@ -95,7 +94,7 @@ const BlogPost: React.FC = () => {
             <p>{post.attributes.Description}</p>
           </article>
         ) : (
-          <div>Post not found</div>
+          <div> Post not found  </div>
         )}
       </main>
     </div>
