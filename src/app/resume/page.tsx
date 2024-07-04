@@ -118,7 +118,7 @@ export default function Resume() {
             </span>
           </p>
           <p className="resumeContent">
-            a NASA Space Apps 2023 AI project that predicts natural disasters' intensity and possible path using the latest
+            a NASA Space Apps 2023 AI project that predicts natural disasters intensity and possible path using the latest
             satellite data and gives early warnings to potentially affected regions{" "}
           </p>
           <p className="resumeContent">
