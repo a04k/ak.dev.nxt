@@ -1,6 +1,7 @@
 "use client";
 
-import { useRouter, Link } from "next/router";
+import useRouter from "next/router";
+import Link from "next/router";
 import { useEffect, useState } from "react";
 import BlogCard from "../Components/blogCard"
 
