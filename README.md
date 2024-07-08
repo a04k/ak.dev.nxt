@@ -1,6 +1,6 @@
 ## Hey There
 
-This is the source code of my portfolio, feel free to clone or suggest changes and edits
+This is the source code of my portfolio/blog website, feel free to suggest changes and edits
 
 ## Getting Started
 
