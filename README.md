@@ -2,7 +2,7 @@
 
 This is the source code of my portfolio/blog website, feel free to suggest changes and edits
 
-## Getting Started
+## To Run This Locally:
 
 First, run the development server:
 
@@ -16,5 +16,5 @@ pnpm dev
 bun dev  --> THE GOAT
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the results.
 
