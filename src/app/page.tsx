@@ -48,10 +48,10 @@ export default function Home() {
                   also UI
                 </li>
                 <li>
-                  currently a backend development team member at Open Source
+                  currently an Intern at Banque Misr & web development team member at Open Source
                   Community FCIS{" "}
                 </li>
-                <li>competed in NASA Space Apps Cairo Hackathon 2023</li>
+                <li>competed in NASA Space Apps Cairo 2023 & competing again this year!</li>
               </ul>
             </h2>
             <ul className="font-sm mt-8 flex flex-row text-neutral-600 dark:text-neutral-300 ">
@@ -94,22 +94,22 @@ export default function Home() {
               info="A NASA Space Apps 2023 AI Project which predicts natural disasters and provides early warnings"
             />
             <ProjCard
+              href="https://github.com/a04k/OSC-Site"
+              link="_blank"
+              name="OSC Site"
+              info="OSC (Open Source Community)'s web app built using the MERN Stack, kitted with a headless CMS"
+            />
+            <ProjCard
               href="https://github.com/a04k/c207proj"
               link="_blank"
               name="Club DB"
-              info="A Club Database Project for my COMP207 Database systems university course."
+              info="A Club Database Project for my Database systems university course."
             />
             <ProjCard
               href="https://github.com/a04k/ak.dev.nxt"
               link="_blank"
               name="Portfolio"
               info="My Portfolio and blog website built with Next.js Typescript and TailwindCSS (The site you're currently visiting!)"
-            />
-            <ProjCard
-              href="https://github.com/a04k/"
-              link="_blank"
-              name="OSC Site"
-              info="OSC (Open Source Community)'s web app built using the MERN Stack, kitted with a headless CMS"
             />
           </div>
         </div>
