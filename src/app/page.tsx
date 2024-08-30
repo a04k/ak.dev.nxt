@@ -40,18 +40,14 @@ export default function Home() {
                   ain shams university{" "}
                 </li>
                 <li>
-                  learning & writing code in a few languages mainly
-                  Javascript/TypeScript, C++, Python{" "}
-                </li>
-                <li>
-                  sometimes do a bit of design work mainly graphic design but
-                  also UI
-                </li>
-                <li>
                   currently an Intern at Banque Misr & web development team member at Open Source
                   Community FCIS{" "}
                 </li>
                 <li>competed in NASA Space Apps Cairo 2023 & competing again this year!</li>
+                <li>
+                  learning & writing code in a few languages mainly
+                  Javascript/TypeScript, Rust, C++, Python{" "}
+                </li>
               </ul>
             </h2>
             <ul className="font-sm mt-8 flex flex-row text-neutral-600 dark:text-neutral-300 ">
