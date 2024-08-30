@@ -64,7 +64,7 @@ export default function Resume() {
         <div className="resumeItem">
           <p className="resumeContentTitle">
             Banque Misr | Software Testing Intern
-            <span className="lg:float-right lg:flex hidden">Aug.'24</span>
+            <span className="lg:float-right lg:flex hidden">Aug. &apos;24</span>
           </p>
           <ul className="resumeContent">
             <p className="mb-4">
@@ -117,7 +117,7 @@ export default function Resume() {
           </p>
           <p className="resumeContent">
             Contributed to designing the interface, gathering and mapping data
-            obtained from the model's output. Received a Galactic Problem Solver
+            obtained from the model&apos;s output. Received a Galactic Problem Solver
             certificate as recognition for the effort.
           </p>
         </div>
