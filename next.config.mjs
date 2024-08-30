@@ -8,7 +8,15 @@ const nextConfig = {
     });
 
     return config;
-  }
+  },
+  async rewrites() {
+    return [
+      {
+        source: '/api/:path*',
+        destination: 'https://ak-dev-cms.onrender.com/api/:path*',
+      },
+    ]
+  },
   
 };
 
