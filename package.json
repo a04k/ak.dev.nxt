@@ -14,6 +14,7 @@
     "braces": "^3.0.3",
     "class-variance-authority": "^0.7.0",
     "lucide-react": "^0.377.0",
+    "micromatch": "^4.0.8",
     "next": "^14.2.4",
     "next-theme": "^0.1.5",
     "next-themes": "^0.3.0",
