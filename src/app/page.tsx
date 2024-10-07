@@ -36,17 +36,16 @@ export default function Home() {
               a little bit about me:
               <ul className="lg:ml-10 ml-5 list-disc">
                 <li>
-                  in my sophomore year of pursuing a B.S in computer science @
+                  In my Junior year of pursuing a B.S in computer science @
                   ain shams university{" "}
                 </li>
                 <li>
-                  currently an Intern at Banque Misr & web development team member at Open Source
+                  Interned at Banque Misr & CIB Summer 24, Current web development team member at Open Source
                   Community FCIS{" "}
                 </li>
-                <li>competed in NASA Space Apps Cairo 2023 & competing again this year!</li>
-                <li>
-                  learning & writing code in a few languages mainly
-                  Javascript/TypeScript, Rust, C++, Python{" "}
+                <li>Competed in NASA Space Apps Cairo 2024 & 2023</li>
+                <li>  
+                  Enjoy Writing (sometimes terrible) code{" "}
                 </li>
               </ul>
             </h2>
@@ -56,7 +55,7 @@ export default function Home() {
                   className="lg:flex transition-all items-center hover:text-neutral-800 dark:hover:text-neutral-100"
                   rel="noopener noreferrer"
                   target="_blank"
-                  href="https://www.linkedin.com/in/ahmedkhaled14/"
+                  href="https://www.linkedin.com/in/a04k/"
                 >
                   <ArrowIcon />
                   <p className="ml-2 lg:h-7">LinkedIn</p>
@@ -83,17 +82,23 @@ export default function Home() {
             projects    
           </h1>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 xl:grid-cols-3 lg:grid-cols-2 font-spmR">
+          <ProjCard
+              href="https://thegrandmasons.github.io/orbit/ "
+              link="_blank"
+              name="Orbit"
+              info="Orbit is a NASA Space Apps 2024 3D Solar System Orrery for the web built using Three.JS, Next.js & Golang, bringing space exploration to classrooms and hobbyists"
+            />
             <ProjCard
               href="https://github.com/TheGrandMasons/Naveris"
               link="_blank"
               name="Naveris"
-              info="A NASA Space Apps 2023 AI Project which predicts natural disasters and provides early warnings"
+              info="A NASA Space Apps 2023 AI Project which predicts natural disasters and provides early warnings to possibly affected regions"
             />
             <ProjCard
               href="https://github.com/a04k/OSC-Site"
               link="_blank"
               name="OSC Site"
-              info="OSC (Open Source Community)'s web app built using the MERN Stack, kitted with a headless CMS"
+              info="OSC (Open Source Community)'s web app built using the MERN Stack, kitted with a headless CMS to ease the management of content"
             />
             <ProjCard
               href="https://github.com/a04k/c207proj"

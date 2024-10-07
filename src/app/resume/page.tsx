@@ -62,7 +62,8 @@ export default function Resume() {
         <h2 className="resumeSectionTitle">Experience</h2>
         <hr />
         <div className="resumeItem">
-          <p className="resumeContentTitle">
+
+        <p className="resumeContentTitle">
             Banque Misr | Software Testing Intern
             <span className="lg:float-right lg:flex hidden">Aug. &apos;24</span>
           </p>
@@ -77,6 +78,15 @@ export default function Resume() {
             <li>• Automated testing processes using Cypress</li>
             <li>• Managed testing workflows using Jira and Zephyr Scale</li>
             <li>• Learned about both manual testing & automation</li>
+          </ul>
+          <p className="resumeContentTitle">
+            CIB | Internship Trainee
+            <span className="lg:float-right lg:flex hidden">Sep. &apos;24</span>
+          </p>
+          <ul className="resumeContent">
+            <li>• Developed my knowledge about the financial aspect of buisnesses</li>
+            <li>• Learned about how the banking sector operates</li>
+            <li>• Gained Entrepreneurship skills</li>
           </ul>
           <p className="resumeContentTitle">
             Open Source Community FCIS | Web Dev. Team Member
@@ -104,6 +114,20 @@ export default function Resume() {
       <div className="resumeSection">
         <h2 className="resumeSectionTitle">Projects</h2>
         <hr />
+        <div className="resumeItem">
+          <p className="resumeContentTitle">
+            Orbit
+            <span className="lg:float-right lg:flex hidden">  
+              NASA SPACE APPS 2024
+            </span>
+          </p>
+          <p className="resumeContent">
+            a NASA Space Apps 2024 Project which brings space exploration to the masses, both to classrooms and casual users{" "}
+          </p>
+          <p className="resumeContent">
+            Built an AI chatbot app using Gemini 1.5 Flash, Contributed to mapping the planets & their orbits, rendering them using Three.JS, adding description tabs and labels to the celestial bodies and scene controls.
+          </p>
+        </div>
         <div className="resumeItem">
           <p className="resumeContentTitle">
             NAVERIS
@@ -143,7 +167,7 @@ export default function Resume() {
             <p className="resumeContent">
               <span className="resumePoint">Graphic Design/UI:</span> Adobe Photoshop, Adobe Illustrator & Figma
             </p>
-            <p>
+            <p>z
               <span className="resumePoint">Soft Skills:</span> Quick learner with strong adaptability, problem-solving abilities, and effective communication skills
             </p>
         </div>
