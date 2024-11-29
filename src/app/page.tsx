@@ -19,7 +19,7 @@ export default function Home() {
   }
   return (
     <div>
-      <main className="md:ml-2 md:mr-2 lg:ml-4 lg:mr-4">
+      <main>
         {/* Hero*/}
         <div id="hero" className="mb-16">
           <h1 className="text-6xl mb-6 font-amarga text-blue-900 dark:text-beige-100">
@@ -27,10 +27,7 @@ export default function Home() {
           </h1>
           <div className="font-spmI text-sm lg:text-base">
             <h2>
-              computer science student, web dev, chronically online.
-              <br />
-              you&apos;re currently looking at my website built with{" "}
-              <u>Next.js</u> and <u>Tailwind</u>{" "}
+              computer science student, chronically online.
             </h2>
             <h2>
               a little bit about me:
@@ -86,7 +83,7 @@ export default function Home() {
               href="https://thegrandmasons.github.io/orbit/ "
               link="_blank"
               name="Orbit"
-              info="Orbit is a NASA Space Apps 2024 3D Solar System Orrery for the web built using Three.JS, Next.js & Golang, bringing space exploration to classrooms and hobbyists"
+              info="Orbit is a NASA Space Apps 2024 3D Solar System Orrery for the web built using Three.JS, Next.js and Gemini, bringing space exploration to classrooms and hobbyists"
             />
             <ProjCard
               href="https://github.com/TheGrandMasons/Naveris"

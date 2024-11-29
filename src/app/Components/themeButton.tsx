@@ -13,13 +13,14 @@ const ToggleMode = () => {
   });
 
   if (!mounted) {
-    return <Button variant="secondary" size="icon" disabled={true}></Button>;
+    return <Button variant="secondary" size="icon" disabled={true} name="Change Theme"></Button>;
   }
 
   const dark = theme === "dark";
 
   return (
     <Button
+      name="Change Theme"
       variant="secondary"
       size="icon"
       onClick={() => setTheme(`${dark ? "light" : "dark"}`)}

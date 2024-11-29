@@ -19,7 +19,7 @@ const ProjCard: React.FC<ProjCardProps> = ({ href, link, name, info }) => {
           -&gt;
         </span>
       </h2>
-      <p className="m-0 max-w-[30ch] text-sm opacity-85">{info}</p>
+      <p className="m-0 md:max-w-[30ch] text-[13px] opacity-75">{info}</p>
     </a>
   );
 };

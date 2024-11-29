@@ -53,11 +53,11 @@ const config: Config = {
       fontFamily: {
         amarga: ["amarga"],
         lostar: ["lostar"],
-        refrankt: ["refrankt"],
         spmR: ["spacemonoR"],
         spmI: ["spacemonoI"],
         spmB: ["spacemonoB"],
         spmBI: ["spacemonoBI"],
+        askey:["askey"]
       },
     },
   },

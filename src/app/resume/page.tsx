@@ -31,9 +31,9 @@ export default function Resume() {
         id="intro"
       >
         <div className="flex-1">
-          <h1 className="text-5xl lg:text-6xl lg:whitespace-nowrap">Ahmed Khaled</h1>
-          <h2 className="lg:text-2xl md:text-xl text-base">
-            Sophomore Computer Science Student, Software Engineer
+          <h1 className="text-[2.6rem] md:text-5xl lg:text-6xl whitespace-nowrap">Ahmed Khaled</h1>
+          <h2 className="lg:text-2xl md:text-xl text-[1rem]">
+            Junior Computer Science Student, Software Engineer
           </h2>
         </div>
         <div className="hidden lg:block lg:ml-10 mt-4 w-14 cursor-pointer">
@@ -84,9 +84,9 @@ export default function Resume() {
             <span className="lg:float-right lg:flex hidden">Sep. &apos;24</span>
           </p>
           <ul className="resumeContent">
-            <li>• Developed my knowledge about the financial aspect of buisnesses</li>
-            <li>• Learned about how the banking sector operates</li>
-            <li>• Gained Entrepreneurship skills</li>
+            <li>•Explored Topics such as Data Literacy, Data Analytics & Cybersecurity</li> 
+            <li>• Learned About the Digital Transformation at CIB</li>
+            <li>• Gained knowledge around fintech and banking sector operations</li>
           </ul>
           <p className="resumeContentTitle">
             Open Source Community FCIS | Web Dev. Team Member
@@ -122,10 +122,10 @@ export default function Resume() {
             </span>
           </p>
           <p className="resumeContent">
-            a NASA Space Apps 2024 Project which brings space exploration to the masses, both to classrooms and casual users{" "}
+            a NASA Space Apps 2024 Project which brings space exploration to everyone, from students in classrooms to casual users & hobbyists{" "}
           </p>
           <p className="resumeContent">
-            Built an AI chatbot app using Gemini 1.5 Flash, Contributed to mapping the planets & their orbits, rendering them using Three.JS, adding description tabs and labels to the celestial bodies and scene controls.
+            Built an AI chatbot app using Gemini 1.5 Flash, Contributed to mapping the planets & their orbits using complex equations, rendering them using Three.JS, adding description screens and labels to the celestial bodies and scene controls.
           </p>
         </div>
         <div className="resumeItem">
@@ -163,11 +163,10 @@ export default function Resume() {
             <p className="resumeContent">
               <span className="resumePoint">Agile Methodology:</span> Knowledgeable in Agile practices and work environments
             </p>
-            <p className="resumeContent"><span className="resumePoint">Microsoft365</span></p>
             <p className="resumeContent">
               <span className="resumePoint">Graphic Design/UI:</span> Adobe Photoshop, Adobe Illustrator & Figma
             </p>
-            <p>z
+            <p>
               <span className="resumePoint">Soft Skills:</span> Quick learner with strong adaptability, problem-solving abilities, and effective communication skills
             </p>
         </div>

@@ -3,20 +3,36 @@
 import { useState, useEffect } from "react";
 
 export default function CityTime() {
-  const [currentTime, setCurrentTime] = useState('00:00'); // Initial value as string
+  const [currentTime, setCurrentTime] = useState('');
 
   useEffect(() => {
-    const intervalId = setInterval(() => {
-      const timeInCairo = new Date().toLocaleTimeString('en-US', {
+    const updateTime = () => {
+      const timeInCairo = new Date().toLocaleTimeString('en-UK', {
         timeZone: 'Africa/Cairo',
-        hour: 'numeric', 
-        minute: 'numeric'
+        hour: 'numeric',
+        minute: 'numeric',
+        hour12: false,
       });
       setCurrentTime(timeInCairo);
-    }, 1000);
+    };
 
-    return () => clearInterval(intervalId);
-  }, [currentTime]); // Empty dependency array for continuous updates
+    const syncToNextMinute = () => {
+      const now = new Date();
+      const secondsLeft = 60 - now.getSeconds();
+      const msToNextMinute = secondsLeft * 1000;
+
+      const timeoutId = setTimeout(() => {
+        updateTime();
+        const intervalId = setInterval(updateTime, 60000);
+        return () => clearInterval(intervalId);
+      }, msToNextMinute);
+      
+      return () => clearTimeout(timeoutId);
+    };
+
+    updateTime();
+    syncToNextMinute();
+  }, []);
 
   return (
     <div>

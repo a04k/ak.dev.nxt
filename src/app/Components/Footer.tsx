@@ -7,7 +7,7 @@ export default function Footer() {
         <CityTime />
       </div>
       <p className="text-center dark:text-dr text-orange-600">ahmed.dev</p>
-    </div>
+    </div>  
   );
 }
 

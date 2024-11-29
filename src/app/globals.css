@@ -11,10 +11,6 @@
   src: url(../../public/Fonts/lostar.otf);
 }
 @font-face {
-  font-family: refrankt;
-  src: url(../../public/Fonts/refrankt.otf);
-}
-@font-face {
   font-family: spacemonoBI;
   src: url(../../public/Fonts/spacemonoBI.ttf);
 }
@@ -29,6 +25,10 @@
 @font-face {
   font-family: spacemonoI;
   src: url(../../public/Fonts/spacemonoI.ttf);
+}
+@font-face {
+  font-family: askey;
+  src: url(../../public/Fonts/askey.otf);
 }
 
 body {
