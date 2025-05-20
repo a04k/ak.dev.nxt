@@ -27,12 +27,12 @@ export default function Resume() {
   return (
     <main>
       <div
-        className="font-amarga mb-10 dark:text-beige-100 text-blue-900 flex flex-col lg:flex-row justify-between"
+        className="font-amarga mb-10 dark:text-petronas-400 text-blue-900 flex flex-col lg:flex-row justify-between"
         id="intro"
       >
         <div className="flex-1">
-          <h1 className="text-[2.6rem] md:text-5xl lg:text-6xl whitespace-nowrap">Ahmed Khaled</h1>
-          <h2 className="lg:text-2xl md:text-xl text-[1rem]">
+          <h1 className="text-[3rem] md:text-5xl lg:text-7xl whitespace-nowrap mb-0 md:mb-2">Ahmed Khaled</h1>
+          <h2 className="lg:text-[1.3rem] md:text-xl text-[1.15rem] text-white">
             Junior Computer Science Student, Software Engineer
           </h2>
         </div>
@@ -49,11 +49,11 @@ export default function Resume() {
             Ain Shams University
             <span className="lg:float-right lg:flex hidden">Cairo, Egypt</span>
           </h3>
-          <p className="resumeContent">
+          <p className="resumeContent mb-2">
             Pursuing a Bachelor of Science in Computer Science
           </p>
           <p className="resumeContent">
-            Current GPA: <u>3.2</u>
+            Current GPA: <u>3.1</u>
           </p>
         </div>
       </div>
@@ -65,7 +65,7 @@ export default function Resume() {
 
         <p className="resumeContentTitle">
             Banque Misr | Software Testing Intern
-            <span className="lg:float-right lg:flex hidden">Aug. &apos;24</span>
+            <span className="lg:float-right lg:flex hidden">Summer &apos;24</span>
           </p>
           <ul className="resumeContent">
             <p className="mb-4">
@@ -84,7 +84,7 @@ export default function Resume() {
             <span className="lg:float-right lg:flex hidden">Sep. &apos;24</span>
           </p>
           <ul className="resumeContent">
-            <li>•Explored Topics such as Data Literacy, Data Analytics & Cybersecurity</li> 
+            <li>• Explored Topics such as Data Literacy, Data Analytics & Cybersecurity</li> 
             <li>• Learned About the Digital Transformation at CIB</li>
             <li>• Gained knowledge around fintech and banking sector operations</li>
           </ul>
@@ -92,7 +92,7 @@ export default function Resume() {
             Open Source Community FCIS | Web Dev. Team Member
           </p>
           <ul className="resumeContent">
-            <li>• Collaborated with team members to complete projects</li>
+            <li>• Delivered multiple sessions and lectures on various web development topics</li>
             <li>
               • Contributed to the development of a community web app using the MERN
               Stack
@@ -116,16 +116,48 @@ export default function Resume() {
         <hr />
         <div className="resumeItem">
           <p className="resumeContentTitle">
+            Repai
+            <span className="lg:float-right lg:flex hidden">  
+             Finalist @ Google GDG Finance AI Hackathon
+            </span>
+          </p>
+          <p className="resumeContent">
+            an AI-powered recycling platform that incentivizes eco-friendly behavior through
+            cashback rewards on a digital wallet. The app uses real-time object detection to identify recyclables,
+            calculate value, and facilitate convenient collection or redemption.
+          </p>
+          <p className="resumeContent mb-2">
+           •  Used Image Detection & Google Gemini for object detection of recyclable materials
+          </p>
+          <p className="resumeContent mb-2">
+          • Assigned real-time, market-based value to scanned items based on materials, size & more
+          </p>
+          <p className="resumeContent mb-2">
+          • Enabled cashback accumulation and redemption through eco-partner locations or collector pickups
+          </p>
+          <p className="resumeContent mb-2">
+          •  Promoted sustainable habits through AI-driven automation and user rewards
+          </p>
+        </div>
+        <div className="resumeItem">
+          <p className="resumeContentTitle">
             Orbit
             <span className="lg:float-right lg:flex hidden">  
               NASA SPACE APPS 2024
             </span>
           </p>
           <p className="resumeContent">
-            a NASA Space Apps 2024 Project which brings space exploration to everyone, from students in classrooms to casual users & hobbyists{" "}
+            A NASA Space Apps 2024 3D Web App (Built using Next.js + The powerful Three.js library) which brings
+            space exploration to the masses, made with the classroom in mind, Orbit provides a unique interactive
+            experience for students and hobbyists to explore the solar system with its planets, moons and asteroids
+            while also having quests, achievements and medals for users to unlock and an AI powered chat buddy to
+            interact with and answer questions to boost and enhance the learning experience.{" "}
           </p>
           <p className="resumeContent">
-            Built an AI chatbot app using Gemini 1.5 Flash, Contributed to mapping the planets & their orbits using complex equations, rendering them using Three.JS, adding description screens and labels to the celestial bodies and scene controls.
+            Built an AI chatbot app using Gemini 2.0 Flash, Contributed to mapping the planets & their orbits using complex equations, rendering them using Three.JS, adding description screens and labels to the celestial bodies and scene controls.
+          </p>
+          <p className="resumeContent">
+            Received a Galactic Problem Solver certificate as recognition for the effort.
           </p>
         </div>
         <div className="resumeItem">
@@ -141,8 +173,10 @@ export default function Resume() {
           </p>
           <p className="resumeContent">
             Contributed to designing the interface, gathering and mapping data
-            obtained from the model&apos;s output. Received a Galactic Problem Solver
-            certificate as recognition for the effort.
+            obtained from the model&apos;s output.
+          </p>
+          <p className="resumeContent">
+            Received a Galactic Problem Solver certificate as recognition for the effort.
           </p>
         </div>
       </div>
@@ -151,19 +185,19 @@ export default function Resume() {
         <h2 className="resumeSectionTitle">Skills & Abilities</h2>
         <hr />
         <div className="resumeItem">
-            <p className="resumeContent">
-              <span className="resumePoint">Programming:</span> Proficient in JavaScript, TypeScript, React.js, Next.js, Tailwind CSS, Node.js, MongoDB, SQL, Python, C++, PHP
+            <p className="skill">
+              <span className="resumePoint">Programming:</span> Proficient in JavaScript, TypeScript, React.js, Next.js, Angular, Tailwind CSS, Bootstrap, Node.js, MongoDB, SQL, Python, C, C++, PHP, Go, Java
             </p>
-            <p className="resumeContent">
-              <span className="resumePoint">Software Testing:</span> Cypress, Selenium
+            <p className="skill">
+              <span className="resumePoint">Software Testing:</span>  Cypress, Selenium (basics), Manual (HLS, Test Cases..), Zephyr 
             </p>
-            <p className="resumeContent">
+            <p className="skill">
               <span className="resumePoint">Version Control:</span> Git, GitHub, GitLab
             </p>
-            <p className="resumeContent">
+            <p className="skill">
               <span className="resumePoint">Agile Methodology:</span> Knowledgeable in Agile practices and work environments
             </p>
-            <p className="resumeContent">
+            <p className="skill">
               <span className="resumePoint">Graphic Design/UI:</span> Adobe Photoshop, Adobe Illustrator & Figma
             </p>
             <p>
@@ -176,22 +210,22 @@ export default function Resume() {
         <div className="resumeItem">
           <h2 className="resumeSectionTitle">Hobbies</h2>
           <hr />
-          <p className="resumeContent mt-3">
+          <p className="skill mt-3">
             <span className="resumePoint">Programming:</span> I mostly do fun
             projects to challenge myself and learn.
           </p>
-          <p className="resumeContent">
+          <p className="skill">
             <span className="resumePoint">Motorsport:</span> Passionate about
             everything motorsports, especially Formula 1.
           </p>
-          <p className="resumeContent">
+          <p className="skillt">
             <span className="resumePoint">Gaming:</span> A bit of competitive
             fun (sometimes rage).
           </p>
         </div>
         {/* download link for mobile*/}
         <div className="md:hidden mt-12 mb-0 text-center">
-          <a href="/Files/AKResume.pdf" download="AKResume.pdf" className="text-orange-600 dark:text-beige-100 underline">
+          <a href="/Files/AKResume.pdf" download="AKResume.pdf" className="text-orange-600 dark:text-petronas-400 underline">
             Download Resume
           </a>
         </div>

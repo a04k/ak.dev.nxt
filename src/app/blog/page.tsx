@@ -73,11 +73,11 @@ const Blog: React.FC = () => {
   return (
     <main>
       <div className="ml-4">
-        <h1 className="font-amarga text-6xl text-eb dark:text-beige-100 mb-12">
+        <h1 className="font-amarga text-7xl text-eb dark:text-white mb-12">
           Latest Posts:
         </h1>
-        <div className="font-amarga text-xl text-orange-600 dark:text-dr">
-          Work in Progress, To be pushed to prod soon!
+        <div className="font-spmR text-xl text-orange-600 dark:text-petronas-400">
+          Work in Progress, Releasing Soon!
         </div>
       </div>
     </main>

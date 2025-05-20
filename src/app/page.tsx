@@ -22,34 +22,34 @@ export default function Home() {
       <main>
         {/* Hero*/}
         <div id="hero" className="mb-16">
-          <h1 className="text-6xl mb-6 font-amarga text-blue-900 dark:text-beige-100">
+          <h1 className="text-7xl mb-8 font-amarga text-blue-900 dark:text-white">
             Ahmed Khaled
           </h1>
           <div className="font-spmI text-sm lg:text-base">
-            <h2>
-              computer science student, chronically online.
-            </h2>
+            <h2>computer science student, chronically online.</h2>
             <h2>
               a little bit about me:
-              <ul className="lg:ml-10 ml-5 list-disc">
+              <ul className="lg:ml-10 ml-5 list-disc lg:py-2">
                 <li>
-                  In my Junior year of pursuing a B.S in computer science @
-                  ain shams university{" "}
+                  In my Junior year of pursuing a B.S in computer science @ ain
+                  shams university{" "}
                 </li>
                 <li>
-                  Interned at Banque Misr & CIB Summer 24, Current web development team member at Open Source
-                  Community FCIS{" "}
+                  Interned at Banque Misr & CIB Summer 24, Current web
+                  development team member at Open Source Community FCIS{" "}
+                </li>
+                <li>
+                  Finalist at Google GDG AI Finance Hackathon Cairo on team
+                  Masons
                 </li>
                 <li>Competed in NASA Space Apps Cairo 2024 & 2023</li>
-                <li>  
-                  Enjoy Writing (sometimes terrible) code{" "}
-                </li>
+                <li>Enjoy Writing (sometimes terrible) code </li>
               </ul>
             </h2>
-            <ul className="font-sm mt-8 flex flex-row text-neutral-600 dark:text-neutral-300 ">
+            <ul className="font-base mt-8 flex flex-row text-neutral-600 dark:text-neutral-300 ">
               <li>
                 <a
-                  className="lg:flex transition-all items-center hover:text-neutral-800 dark:hover:text-neutral-100"
+                  className="lg:flex transition-all items-center dark:text-red-600 md:dark:text-white hover:text-neutral-800 dark:hover:text-red-800 md:dark:hover:text-red-600"
                   rel="noopener noreferrer"
                   target="_blank"
                   href="https://www.linkedin.com/in/a04k/"
@@ -61,7 +61,7 @@ export default function Home() {
               &nbsp; &nbsp;
               <li>
                 <a
-                  className="lg:flex items-center transition-all hover:text-neutral-800 dark:hover:text-neutral-100"
+                  className="lg:flex items-center transition-all dark:text-red-600 md:dark:text-white hover:text-neutral-800 dark:hover:text-red-800 md:dark:hover:text-red-600"
                   rel="noopener noreferrer"
                   href="mailto:63ahmedkhaled@gmail.com"
                 >
@@ -75,12 +75,20 @@ export default function Home() {
 
         {/* Projects */}
         <div id="Projects" className="mb-0">
-          <h1 className="text-6xl mb-8 text-orange-600 dark:text-dr font-amarga">
-            projects    
+          <h1 className="text-7xl mb-8 text-orange-600 dark:text-petronas-400 font-amarga">
+            projects
           </h1>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 xl:grid-cols-3 lg:grid-cols-2 font-spmR">
-          <ProjCard
-              href="https://thegrandmasons.github.io/orbit/ "
+            <ProjCard
+              href="https://github.com/TheGrandMasons/repai"
+              link="_blank"
+              name="Repai - Finalist Google GDG Hackathon"
+              info="an AI-powered recycling platform that incentivizes eco-friendly behavior through
+                cashback rewards on a digital wallet. The app uses real-time object detection to identify recyclables,
+                calculate value, and facilitate convenient collection or redemption."
+            />
+            <ProjCard
+              href="https://github.com/TheGrandMasons/orbit"
               link="_blank"
               name="Orbit"
               info="Orbit is a NASA Space Apps 2024 3D Solar System Orrery for the web built using Three.JS, Next.js and Gemini, bringing space exploration to classrooms and hobbyists"

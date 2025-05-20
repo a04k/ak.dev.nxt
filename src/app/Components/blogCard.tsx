@@ -29,6 +29,7 @@ const BlogCard: React.FC<BlogCardProps> = ({
           <p>{date}</p>
         </div>
       </div>
+      
     </a>
   );
 };

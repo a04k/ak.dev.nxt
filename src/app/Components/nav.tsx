@@ -27,12 +27,12 @@ export function Nav() {
   //  Experimenting with keeping it sticky, but also moves it to the center vertically {/*isSticky ? 'fixed top-1/2 transform -translate-y-1/2' : 'lg:float-left'*/}
 
   return (
-    <Navbar className="xl:mt-0 mr-2 lg:ml-10 xl:ml-12 2xl:ml-14 mb-12 lg:mb-0 lg:float-left dark:text-beige-100 text-orange-500 transition-all duration-300">
+    <Navbar className="xl:mt-0 mr-2 lg:ml-10 xl:ml-12 2xl:ml-14 mb-12 lg:mb-0 lg:float-left dark:text-white text-orange-500 transition-all duration-300">
       <NavbarContent className="flex lg:flex-col gap-0 font-amarga lg:gap-6">
         <NavbarBrand className="mb-8">
           <Link
             href="/"
-            className="px-6 rounded-3xl bg-orange-600 dark:bg-dr text-lbg dark:text-dPurp-800 py-4 lg:text-7xl hidden lg:flex lg:ml-2 hover:saturate-150"
+            className="px-6 rounded-3xl bg-orange-600 dark:bg-petronas-400 text-lbg dark:text-black py-2 lg:text-8xl hidden lg:flex lg:ml-2 hover:saturate-150"
           >
             A
           </Link>

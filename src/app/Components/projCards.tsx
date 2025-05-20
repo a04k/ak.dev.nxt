@@ -9,7 +9,7 @@ const ProjCard: React.FC<ProjCardProps> = ({ href, link, name, info }) => {
   return (
     <a
       href={href}
-      className="group rounded-lg border border-transparent px-4 py-5 transition-colors hover:border-orange-600 hover:bg-beige-200 dark:hover:border-dr hover:dark:bg-dPurp-800 hover:dark:opacity-85"
+      className="group rounded-lg border md:border-transparent max-md:border-orange-600/87 max-md:dark:border-petronas-900 px-4 py-5 transition-colors hover:border-orange-600 hover:bg-beige-200 dark:hover:border-petronas-600 hover:dark:bg-black hover:dark:opacity-85"
       target={link}
       rel="noopener noreferrer"
     >
@@ -19,7 +19,7 @@ const ProjCard: React.FC<ProjCardProps> = ({ href, link, name, info }) => {
           -&gt;
         </span>
       </h2>
-      <p className="m-0 md:max-w-[30ch] text-[13px] opacity-75">{info}</p>
+      <p className="m-0 md:max-w-[40ch] text-[13px] opacity-75">{info}</p>
     </a>
   );
 };
