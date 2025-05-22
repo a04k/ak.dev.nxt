@@ -22,7 +22,7 @@ export default function Home() {
       <main>
         {/* Hero*/}
         <div id="hero" className="mb-16">
-          <h1 className="text-7xl mb-5 font-amarga text-blue-900 dark:text-white">
+          <h1 className="text-8xl mb-5 font-amarga text-black dark:text-white">
             Ahmed Khaled
           </h1>
           <div className="font-spmI text-sm lg:text-base">
@@ -31,7 +31,7 @@ export default function Home() {
               a little bit about me:
               <ul className="lg:ml-10 ml-5 list-disc lg:py-2">
                 <li>
-                  In my Junior year of pursuing a B.S in computer science @ ain
+                  In my Junior year of pursuing a Bachelors Degree in Computer Science @ ain
                   shams university{" "}
                 </li>
                 <li>
@@ -75,14 +75,14 @@ export default function Home() {
 
         {/* Projects */}
         <div id="Projects" className="mb-0">
-          <h1 className="text-7xl mb-9 md:mb-8 text-orange-600 dark:text-petronas-400 font-amarga">
+          <h1 className="text-7xl mb-9 md:mb-8 lg:mb-12 text-orange-600 dark:text-petronas-400 font-amarga">
             projects
           </h1>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 md:gap-10 xl:grid-cols-3 lg:grid-cols-2 font-spmR">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 md:gap-10 2xl:grid-cols-3 xl:grid-cols-2 lg:grid-cols-2 font-spmR">
             <ProjCard
               href="https://github.com/TheGrandMasons/repai"
               link="_blank"
-              name="Repai - Finalist Google GDG Hackathon"
+              name="Repai - Finalist @ Google GDG Hackathon"
               info="an AI-powered recycling platform that incentivizes eco-friendly behavior through
                 cashback rewards on a digital wallet. The app uses real-time object detection to identify recyclables,
                 calculate value, and facilitate convenient collection or redemption."

@@ -27,16 +27,16 @@ export default function Resume() {
   return (
     <main>
       <div
-        className="font-amarga mb-10 dark:text-petronas-400 text-blue-900 flex flex-col lg:flex-row justify-between"
+        className="font-amarga mb-10 flex flex-col lg:flex-row justify-between"
         id="intro"
       >
         <div className="flex-1">
-          <h1 className="text-[3rem] md:text-5xl lg:text-7xl whitespace-nowrap mb-0 md:mb-2">Ahmed Khaled</h1>
-          <h2 className="lg:text-[1.3rem] md:text-xl text-[1.15rem] dark:text-white">
+          <h1 className="text-[3rem] md:text-5xl lg:text-8xl whitespace-nowrap mb-0 dark:text-white">Ahmed Khaled</h1>
+          <h2 className="lg:text-[1.3rem] md:text-xl text-[1.15rem] dark:text-petronas-300 text-orange-800">
             Junior Computer Science Student, Software Engineer
           </h2>
         </div>
-        <div className="hidden lg:block lg:ml-10 mt-4 w-14 cursor-pointer">
+        <div className="hidden lg:block lg:ml-10 mt-4 w-14 cursor-pointer text-orange-700 dark:text-red-800">
           <DownloadBtn />
         </div>
       </div>
@@ -53,8 +53,9 @@ export default function Resume() {
             Pursuing a Bachelor of Science in Computer Science
           </p>
           <p className="resumeContent">
-            Current GPA: <u>3.1</u>
+            Expected Graduation: 2026
           </p>
+
         </div>
       </div>
 
@@ -81,7 +82,7 @@ export default function Resume() {
           </ul>
           <p className="resumeContentTitle">
             CIB | Internship Trainee
-            <span className="lg:float-right lg:flex hidden">Sep. &apos;24</span>
+            <span className="lg:float-right lg:flex hidden">Summer &apos;24</span>
           </p>
           <ul className="resumeContent">
             <li>• Explored Topics such as Data Literacy, Data Analytics & Cybersecurity</li> 

@@ -3,8 +3,8 @@ import React from 'react';
 const DownloadBtn = () => {
   return (
     <a
-      href="/Files/AKResume.pdf"
-      download="AKResume.pdf"
+      href="/Files/AhmedKhaled-Resmue.pdf"
+      download="AhmedKhaled-Resmue.pdf"
       className="flex items-center justify-center"
     >
       {/*added tailwind sizing classes to size for smaller devices (deprecated featuere now) */}

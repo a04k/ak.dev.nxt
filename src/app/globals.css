@@ -37,7 +37,7 @@ body {
   :root{
   --foreground-rgb: 0, 0, 255;
   --background-start-rgb: 0, 0, 0;
-  --background-end-rgb: 0, 0, 0; 
+  --background-end-rgb: 0, 0, 0;
   }
   */
   /*
@@ -61,7 +61,7 @@ body {
   }
 
   .resumeSectionTitle {
-    @apply lg:text-2xl text-xl font-bold mb-4 dark:text-petronas-500 text-orange-600;
+    @apply lg:text-2xl text-xl font-bold mb-4 dark:text-petronas-300 text-orange-600;
   }
 
   .resumeItem {
@@ -82,10 +82,14 @@ body {
     @apply text-lg ml-auto font-spmB;
   }
   .navlink {
-    @apply dark:hover:bg-petronas-900 p-2 px-3 rounded-lg dark:hover:text-petronas-300 hover:text-blue-900 hover:bg-orange-200 text-lg md:text-xl transition-all;
+    @apply dark:hover:bg-petronas-900 py-2 px-4 rounded-lg
+      dark:hover:text-petronas-100 hover:bg-orange-200/20
+      text-lg md:text-xl hover:text-orange-600
+      hover:outline hover:outline-[2px] hover:outline-black/70 dark:hover:outline-white
+      text-center min-w-20 inline-flex justify-center items-center box-border;
   }
+
   hr {
-    @apply dark:border-petronas-700 border-black opacity-30;
+    @apply dark:border-petronas-600 border-orange-800;
   }
 }
-

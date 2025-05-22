@@ -73,7 +73,7 @@ const Blog: React.FC = () => {
   return (
     <main>
       <div className="ml-4">
-        <h1 className="font-amarga text-7xl text-eb dark:text-white mb-12">
+        <h1 className="font-amarga text-8xl dark:text-white mb-12">
           Latest Posts:
         </h1>
         <div className="font-spmR text-xl text-orange-600 dark:text-petronas-400">
