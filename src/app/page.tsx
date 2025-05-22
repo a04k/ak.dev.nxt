@@ -112,7 +112,7 @@ export default function Home() {
               info="OSC (Open Source Community)'s web app built using the MERN Stack, kitted with a headless CMS to ease the management of content"
             />
             <ProjCard
-              href="https://github.com/a04k/ak.dev.nxt"
+              href="https://github.com/a04k/ak.work"
               link="_blank"
               name="Portfolio"
               info="My Portfolio and blog website built with Next.js Typescript and TailwindCSS (The site you're currently visiting!)"
