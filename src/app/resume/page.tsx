@@ -32,7 +32,7 @@ export default function Resume() {
       >
         <div className="flex-1">
           <h1 className="text-[3rem] md:text-5xl lg:text-7xl whitespace-nowrap mb-0 md:mb-2">Ahmed Khaled</h1>
-          <h2 className="lg:text-[1.3rem] md:text-xl text-[1.15rem] text-white">
+          <h2 className="lg:text-[1.3rem] md:text-xl text-[1.15rem] dark:text-white">
             Junior Computer Science Student, Software Engineer
           </h2>
         </div>
@@ -220,7 +220,7 @@ export default function Resume() {
           </p>
           <p className="skillt">
             <span className="resumePoint">Gaming:</span> A bit of competitive
-            fun (sometimes rage).
+            fun.
           </p>
         </div>
         {/* download link for mobile*/}

@@ -22,7 +22,7 @@ export default function Home() {
       <main>
         {/* Hero*/}
         <div id="hero" className="mb-16">
-          <h1 className="text-7xl mb-8 font-amarga text-blue-900 dark:text-white">
+          <h1 className="text-7xl mb-5 font-amarga text-blue-900 dark:text-white">
             Ahmed Khaled
           </h1>
           <div className="font-spmI text-sm lg:text-base">
@@ -35,8 +35,8 @@ export default function Home() {
                   shams university{" "}
                 </li>
                 <li>
-                  Interned at Banque Misr & CIB Summer 24, Current web
-                  development team member at Open Source Community FCIS{" "}
+                  Interned at Banque Misr & CIB Summer 2024, Current web
+                  development team member at Open Source Community{" "}
                 </li>
                 <li>
                   Finalist at Google GDG AI Finance Hackathon Cairo on team
@@ -75,10 +75,10 @@ export default function Home() {
 
         {/* Projects */}
         <div id="Projects" className="mb-0">
-          <h1 className="text-7xl mb-8 text-orange-600 dark:text-petronas-400 font-amarga">
+          <h1 className="text-7xl mb-9 md:mb-8 text-orange-600 dark:text-petronas-400 font-amarga">
             projects
           </h1>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 xl:grid-cols-3 lg:grid-cols-2 font-spmR">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 md:gap-10 xl:grid-cols-3 lg:grid-cols-2 font-spmR">
             <ProjCard
               href="https://github.com/TheGrandMasons/repai"
               link="_blank"
@@ -91,25 +91,25 @@ export default function Home() {
               href="https://github.com/TheGrandMasons/orbit"
               link="_blank"
               name="Orbit"
-              info="Orbit is a NASA Space Apps 2024 3D Solar System Orrery for the web built using Three.JS, Next.js and Gemini, bringing space exploration to classrooms and hobbyists"
+              info="Orbit is a NASA Space Apps 2024 3D Solar System Orrery for the web built using Three.JS, Next.js and Gemini, bringing space exploration to both classrooms and hobbyists while making it fun with an interactive learning experience including achievements and medals"
             />
             <ProjCard
               href="https://github.com/TheGrandMasons/Naveris"
               link="_blank"
               name="Naveris"
-              info="A NASA Space Apps 2023 AI Project which predicts natural disasters and provides early warnings to possibly affected regions"
+              info="A NASA Space Apps 2023 AI Project built on a custom fine tuned model using NASA provided data which can predict natural disasters (Hurricanes, Tropical Storms, Snowstorms, Tornadoes) and provide early warnings to possibly affected regions"
+            />
+            <ProjCard
+              href="https://github.com/a04k/wisewallet"
+              link="_blank"
+              name="WiseWallet"
+              info="A Simple Personal Finances Assistant application built using Flutter with AI Powered Statistics, Tips and a personal AI chatbot assistant"
             />
             <ProjCard
               href="https://github.com/a04k/OSC-Site"
               link="_blank"
               name="OSC Site"
               info="OSC (Open Source Community)'s web app built using the MERN Stack, kitted with a headless CMS to ease the management of content"
-            />
-            <ProjCard
-              href="https://github.com/a04k/c207proj"
-              link="_blank"
-              name="Club DB"
-              info="A Club Database Project for my Database systems university course."
             />
             <ProjCard
               href="https://github.com/a04k/ak.dev.nxt"
