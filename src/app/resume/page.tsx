@@ -65,7 +65,7 @@ export default function Resume() {
         <div className="resumeItem">
 
         <p className="resumeContentTitle">
-            Banque Misr | Software Testing Intern
+            Banque Misr | Intern Software QA/QC Engineer 
             <span className="lg:float-right lg:flex hidden">Summer &apos;24</span>
           </p>
           <ul className="resumeContent">
