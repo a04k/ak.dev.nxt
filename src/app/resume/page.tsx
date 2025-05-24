@@ -50,7 +50,7 @@ export default function Resume() {
             <span className="lg:float-right lg:flex hidden">Cairo, Egypt</span>
           </h3>
           <p className="resumeContent mb-2">
-            Pursuing a Bachelor of Science in Computer Science
+            Pursuing a Bachelors Degree in Computer Science
           </p>
           <p className="resumeContent">
             Expected Graduation: 2026
